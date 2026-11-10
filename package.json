@@ -8,6 +8,9 @@
     "node": ">=22"
   },
   "scripts": {
+    "pack:templates": "node scripts/pack-templates.mjs",
+    "pretest": "node scripts/pack-templates.mjs",
+    "prebuild": "node scripts/pack-templates.mjs",
     "build": "pnpm --filter @listune/desktop build",
     "build:desktop": "pnpm --filter @listune/desktop tauri build",
     "test": "pnpm -r test",

@@ -1,0 +1,22 @@
+{
+  "swiss-motion": {
+    "sha256": "d62a734d98bb22cd1a3c93aba55a281be4568650ff114aaeb36ce3f38d16ba10",
+    "size": 9562,
+    "version": 1
+  },
+  "dataviz": {
+    "sha256": "5df9bec9cc4c7feb28640b9f5d8d40a0e7f151a6c72f8f901fb2a0e4f8349cd0",
+    "size": 9455,
+    "version": 1
+  },
+  "crayon-book": {
+    "sha256": "6372e9aa24c55080f0af89b05e253d884f9d48f7da9de98a702a6058e0a8047d",
+    "size": 9673,
+    "version": 1
+  },
+  "satellite-briefing": {
+    "sha256": "05381dfac034e3c80fc463b7c07f32fd47d90c6f3b1eea475c0208effd83b187",
+    "size": 10554,
+    "version": 1
+  }
+}

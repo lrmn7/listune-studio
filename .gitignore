@@ -1,7 +1,7 @@
 node_modules/
 .superpowers/
 target/
-dist/
+dist/*
 !dist/templates/
 !dist/templates/**
 .wrangler/

@@ -216,6 +216,13 @@ describe('Starter templates for Opuscar Remotion styles', () => {
   it('packed template archives match manifest and have safe forward-slash paths', () => {
     const distTemplates = path.resolve(__dirname, '../../../dist/templates');
     const manifestPath = path.join(distTemplates, 'templates.json');
+    if (!fs.existsSync(manifestPath)) {
+      const packScript = path.resolve(__dirname, '../../../scripts/pack-templates.mjs');
+      if (fs.existsSync(packScript)) {
+        const { execSync } = require('node:child_process');
+        execSync(`node "${packScript}"`, { stdio: 'pipe' });
+      }
+    }
     expect(fs.existsSync(manifestPath)).toBe(true);
 
     const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
