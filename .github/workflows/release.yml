@@ -32,6 +32,7 @@ jobs:
           node-version: 22
           cache: pnpm
       - run: pnpm install --frozen-lockfile
+      - run: node scripts/pack-templates.mjs
 
       - run: pnpm typecheck
       - run: pnpm test
@@ -108,6 +109,7 @@ jobs:
           node-version: 22
           cache: pnpm
       - run: pnpm install --frozen-lockfile
+      - run: node scripts/pack-templates.mjs
 
       - uses: dtolnay/rust-toolchain@stable
         with:
