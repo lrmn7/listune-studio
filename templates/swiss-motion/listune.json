@@ -1,0 +1,6 @@
+{
+  "engine": "remotion",
+  "render": ["npx", "remotion", "render", "src/index.ts", "Main", "{output}"],
+  "install": ["npm", "install"],
+  "readme": "STYLE.md"
+}

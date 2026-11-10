@@ -1,0 +1,19 @@
+{
+  "name": "listune-template-crayon-book",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Crayon Picture Book starter template for Remotion in Listune Studio",
+  "scripts": {
+    "build": "remotion render src/index.ts Main renders/output.mp4",
+    "start": "remotion preview src/index.ts"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "remotion": "^4.0.200"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "typescript": "^5.7.0"
+  }
+}

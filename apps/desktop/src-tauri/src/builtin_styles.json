@@ -1,0 +1,1035 @@
+[
+  {
+    "id": "atlas-journey",
+    "name": "Atlas journey",
+    "source": "builtin",
+    "sourceUrl": null,
+    "notes": {
+      "camera": "One continuous flight over an illustrated globe: spins, swoops to a country, follows a ship or plane, never a hard cut",
+      "pacing": "About 60 s, 10 to 14 shots of at least 3 s, a re-hook every 15 s, the last shot loops into the first",
+      "type": "Big rounded words pop in one at a time near the bottom, a stat card counts up at the top",
+      "color": "Picture-book atlas: teal sea, sand land, thin borders, paper grain, terracotta subject, deep teal for comparisons",
+      "captions": "Word by word, about six key words in colour, at most one struck-through word",
+      "transitions": "The camera travels between places instead of cutting"
+    },
+    "prompt": "A 60-second vertical geography short on a warm illustrated globe.\nOne surprising true fact as a \"Did you know\" hook, then why it is strange, the reason, the evidence on the map and a payoff.\nOne continuous camera journey of 10 to 14 shots; small illustrated sprites (ships, trains, planes) travel the real routes.\nTerracotta for the subject, deep teal for comparisons, words pop in one at a time, a calm narrator, 140 to 155 words.",
+    "createdAt": "2026-11-09T13:58:24Z",
+    "engine": "remotion",
+    "previewUrl": "/style-previews/atlas-journey.jpg",
+    "previewVideoUrl": "/style-previews/atlas-journey.mp4",
+    "template": {
+      "sha256": "2f9e57c160e899f26156bd7cbac3bc0937a5a6ece48b6cd504e81572b7fda498",
+      "size": 81199,
+      "version": 1
+    },
+    "version": 1
+  },
+  {
+    "id": "cartoon-3d-world",
+    "name": "Cartoon 3D world",
+    "source": "builtin",
+    "sourceUrl": null,
+    "notes": {
+      "camera": "Smooth gliding moves, hard cuts on big jumps, every hold creeps in, 4-5° rolls, flip-shakes on impacts",
+      "pacing": "55-70 s story, about 3.7 words per second, every reaction lands 0-3 frames before its word",
+      "type": "No captions or labels in the picture",
+      "color": "Saturated sky and painted town with black ink outlines, golden-hour shots with violet-blue shadows",
+      "captions": "None unless asked for",
+      "transitions": "Hard cuts, crossfades on place changes, a white flash after the hook"
+    },
+    "prompt": "A 55-70 second vertical cartoon story short: flat bean-head 2D characters with plum ink outlines standing in a painted 3D town with black ink lines, rendered with three.js inside Remotion.\nOne surprising true story with a physical cause and effect: hook, setting, escalation, the snap, a deadpan double line, the explanation through an everyday analogy, the consequence, a callback twist.\nGliding cameras with depth of field, a steady narrator, synthesized sound effects and an original score under the voice. No captions.",
+    "createdAt": "2026-11-09T13:58:24Z",
+    "engine": "remotion",
+    "previewUrl": "/style-previews/cartoon-3d-world.jpg",
+    "previewVideoUrl": "/style-previews/cartoon-3d-world.mp4",
+    "template": {
+      "sha256": "ad49f832e04ecb31c26723ae6e266999bcfd1315f1023c9d3726eb5afa8ef889",
+      "size": 4604773,
+      "version": 2
+    },
+    "version": 2
+  },
+  {
+    "id": "cartoon-3d-what-if",
+    "name": "Cartoon 3D what-if",
+    "source": "builtin",
+    "sourceUrl": null,
+    "notes": {
+      "camera": "Smooth gliding moves, hard cuts on big jumps, every hold creeps in, crossfades between places",
+      "pacing": "About 55 s: a \"What if you...\" hook, then Day 1 to Day 30 beats that escalate, each step a real fact",
+      "type": "Flat 2D overlay layer: day chips, simple charts and diagrams in a heavy rounded sans with dark ink outlines",
+      "color": "Saturated painted 3D world with black ink outlines, golden and dimmed light for the darker turns",
+      "captions": "None in the picture; the overlay carries the data",
+      "transitions": "Crossfades on place changes, a white flash after the hook, the world dims for the turn"
+    },
+    "prompt": "A vertical \"What if you...\" cartoon short: you, a flat bean-head 2D character, in a painted 3D world with black ink lines, rendered with three.js inside Remotion.\nA one-line hypothetical hook, then day-by-day beats (Day 1, Day 3, ... Day 30) that escalate from fun to strange to serious; every step is a real fact or a real study.\nA recurring cast (you, a parent, friends, strangers) and recurring places; a flat 2D overlay shows the day chips and the evidence as simple charts and diagrams.\nA steady narrator, synthesized sound effects and an original score under the voice, ending on a twist that turns back to the viewer.",
+    "createdAt": "2026-11-09T13:58:24Z",
+    "engine": "remotion",
+    "previewUrl": "/style-previews/cartoon-3d-what-if.jpg",
+    "previewVideoUrl": "/style-previews/cartoon-3d-what-if.mp4",
+    "template": {
+      "sha256": "b883d397a5fe7e5cee4e8842f060b4f7cce69dbed6d80a99ddc6e67499113eaa",
+      "size": 4512125,
+      "version": 2
+    },
+    "version": 2
+  },
+  {
+    "id": "archive-lighttable",
+    "name": "Archive Light Table",
+    "source": "builtin",
+    "sourceUrl": "https://github.com/lemomo-ai/lemo-opuscar",
+    "prompt": "Real archive objects (glass negatives, slides, letters, telegrams, clippings, drawings) lie on a cool, backlit light table. A loupe comes down on one of them, and inside the glass the object comes alive: a negative turns positive, a line of type lights up, a number lifts off the page, a photograph opens into depth. Precise catalogue numbers, dates and readings are pinned to the objects. Clean, modern and quiet, with no vintage filter.\nReferences (grammar only): archive documentaries that push into still photographs; visual investigations that annotate real imagery (one line, one reading, one source per screen); product macro films (glass edges, transmitted light). Copy none of their layouts, typefaces, shots or music, and never name them in the film.",
+    "notes": {
+      "camera": "- **One world, one camera**: every object is a textured quad on the table with a centre, rotation and scale (texture px → world units at true size). The camera is a 2D centre, zoom and roll; the table and every mark go through the same world → screen function.\n- **The light table**: an emissive surface (≈ 0.97 white, slightly cool), soft falloff, diffuser noise, an aluminium frame and a dark desk ",
+      "pacing": "- 24 fps on ones; every camera parameter on smooth monotone curves through keys (no overshoot, no stepping).\n- The camera glides across the table, slows to let the loupe land, then pushes. Speed lives in the glides and pushes; holds are for reading.\n- The loupe lands with a fast ease-out (≈ 0.4 s), lifts the same way. Lines draw on in 0.3–0.6 s; text wipes in from its leader side; numbers count up",
+      "type": "- **Roles**: a monospace for identifiers, dates and readings (e.g. IBM Plex Mono, 17–34 px; readings 74–120 px); a sans for labels in the film's language (e.g. Noto Sans SC or Inter, 21–36 px); a serif only for titles and the one name a photograph carries (60–76 px). OFL, self-hosted, CJK subset when needed.\n- **Labels attach to objects**: an anchor dot and ring, a vertical leader, then the text. ",
+      "color": "- **One world, one camera**: every object is a textured quad on the table with a centre, rotation and scale (texture px → world units at true size). The camera is a 2D centre, zoom and roll; the table and every mark go through the same world → screen function.\n- **The light table**: an emissive surface (≈ 0.97 white, slightly cool), soft falloff, diffuser noise, an aluminium frame and a dark desk ",
+      "captions": "- **Labels attach to objects**: an anchor dot and ring, a vertical leader, then the text. A reading sits in a dark caption plate with a small label above and the source (the catalogue number or the original wording) below.\n- **Subtitles** are a caption strip at the bottom centre, on a dark plate with a 3 px signal-coloured edge. If the film is bilingual, the film's language goes on top. Hold ≥ max",
+      "transitions": "- The loupe lands with a fast ease-out (≈ 0.4 s), lifts the same way. Lines draw on in 0.3–0.6 s; text wipes in from its leader side; numbers count up and land with the voice."
+    },
+    "createdAt": "2026-10-29T00:00:00Z",
+    "engine": "remotion",
+    "previewUrl": "/style-previews/archive-lighttable.jpg",
+    "previewVideoUrl": "/style-previews/archive-lighttable.mp4",
+    "template": null,
+    "build": "- **One world, one camera**: every object is a textured quad on the table with a centre, rotation and scale (texture px → world units at true size). The camera is a 2D centre, zoom and roll; the table and every mark go through the same world → screen function.\n- **The light table**: an emissive surface (≈ 0.97 white, slightly cool), soft falloff, diffuser noise, an aluminium frame and a dark desk beyond. It can be switched off (ambient ≈ 0.04) and flicker on.\n- **Glass negatives**: transmission from the scan's positive, `T = 0.035 + 0.9 · (1 − pos)^1.25`, with a warm silver-gelatin tint; the e",
+    "palette": [
+      "#F7F9FB",
+      "#15171A",
+      "#FF5A1F"
+    ],
+    "category": "Evidence Films",
+    "categoryCn": "实证影像",
+    "nameCn": "档案灯台",
+    "uses": [
+      "Brand history",
+      "Archive stories",
+      "Museums"
+    ]
+  },
+  {
+    "id": "briefing-board",
+    "name": "Engineering Briefing Board",
+    "source": "builtin",
+    "sourceUrl": "https://github.com/lemomo-ai/lemo-opuscar",
+    "prompt": "One real whiteboard wall, filmed: window light on enamel, ghosts of erased marker, frame and tray. Cut-out photographs of real things land on it with weight; tags, magnets, a ruler and stamps are pinned to it; marker ink draws itself in three colours with fixed meanings. The camera rides the lines from fact to fact and only at the end pulls back to show the whole briefing.\nReferences (grammar only): explainers filmed on a map wall; the long pull-back over a wall covered in work; drafting conventions (plan above elevation, dimension lines, hatching). Never copy them or name them in the film.",
+    "notes": {
+      "camera": "- **Board (z 0)**: procedural enamel, wiped ghost strokes, smudges, a window falloff, a sliding diagonal reflection; the frame shadows a warm grey wall.\n- **Ink (multiply)**: flat colour at about 90 %, lighter core, round caps, a wet-tip glint on the stroke being drawn. Lettering: a marker font revealed glyph by glyph with seeded tilt and baseline jitter. Erasing leaves a blurred ghost (about 7 %)",
+      "pacing": "- 24 fps on ones; nothing is stepped.\n- Camera: overlapping eased moves, velocity ∝ u^a (1−u)^b (a, b ≈ 1.5–4), so speed and acceleration never jump; b > a gives inertia. A hand-held breath (≤ 3 px) underneath; shake only on an impact.\n- Weight: prints are lowered from the camera side, land, bounce and settle as the shadow tightens; magnets clack on to pin them; tags swing; removed magnets pop tow",
+      "type": "- **Marker lettering**: a single-weight marker face covering every script the film uses (ours: LXGW Marker Gothic, OFL, subset — re-run when words change). Content 100–160 board px; a verdict 230–400.\n- **Printed labels** (tags, cards, stamps): a sturdy sans; credit lines in a monospace. A tag holds one to three words.\n- **Subtitles**: a frosted acrylic strip at the bottom centre with a blue marke",
+      "color": "- **Board (z 0)**: procedural enamel, wiped ghost strokes, smudges, a window falloff, a sliding diagonal reflection; the frame shadows a warm grey wall.\n- **Ink (multiply)**: flat colour at about 90 %, lighter core, round caps, a wet-tip glint on the stroke being drawn. Lettering: a marker font revealed glyph by glyph with seeded tilt and baseline jitter. Erasing leaves a blurred ghost (about 7 %)",
+      "captions": "- **Marker lettering**: a single-weight marker face covering every script the film uses (ours: LXGW Marker Gothic, OFL, subset — re-run when words change). Content 100–160 board px; a verdict 230–400.\n- **Printed labels** (tags, cards, stamps): a sturdy sans; credit lines in a monospace. A tag holds one to three words.\n- **Subtitles**: a frosted acrylic strip at the bottom centre with a blue marke",
+      "transitions": "- Never: dissolves, scale-pops on text, bouncy UI easing, text fading in by itself."
+    },
+    "createdAt": "2026-10-29T00:00:00Z",
+    "engine": "remotion",
+    "previewUrl": "/style-previews/briefing-board.jpg",
+    "previewVideoUrl": "/style-previews/briefing-board.mp4",
+    "template": null,
+    "build": "- **Board (z 0)**: procedural enamel, wiped ghost strokes, smudges, a window falloff, a sliding diagonal reflection; the frame shadows a warm grey wall.\n- **Ink (multiply)**: flat colour at about 90 %, lighter core, round caps, a wet-tip glint on the stroke being drawn. Lettering: a marker font revealed glyph by glyph with seeded tilt and baseline jitter. Erasing leaves a blurred ghost (about 7 %).\n- **Prints (z ≈ 6–14)**: photographs cut out at full resolution (a matting model, or a hand polygon / mask), clean edges, one shared grade (lower saturation, a touch warmer, lifted blacks). Thin str",
+    "palette": [
+      "#8F8B83",
+      "#F3F1EB",
+      "#B9BCBF",
+      "#23272E",
+      "#1F4FC8",
+      "#D33A21",
+      "#6C727B",
+      "#5F86DA"
+    ],
+    "category": "Evidence Films",
+    "categoryCn": "实证影像",
+    "nameCn": "工程简报板",
+    "uses": [
+      "Engineering",
+      "Option comparisons",
+      "Briefings"
+    ]
+  },
+  {
+    "id": "caption-news",
+    "name": "Caption News",
+    "source": "builtin",
+    "sourceUrl": "https://github.com/lemomo-ai/lemo-opuscar",
+    "prompt": "Social-video news that reads with the sound off. Real footage, photos and the source document are the ground; huge captions are the lead actor, slammed in a chunk at a time with one keyword on a yellow block. Hard cuts on a music grid, numbers that roll, a source tag that slides in whenever a figure appears, and the original document highlighted on screen before its number is believed. 16:9, built for a feed.\nReferences (grammar only): the captions-first social news of the mid-2010s (NowThis, AJ+), horizontal explainers that set big type over footage (Bloomberg Quicktake). Never copy their logos, fonts, colour ratios, idents or shots, and never name them in the film.",
+    "notes": {
+      "camera": "| Zone | Position | Content |\n|---|---|---|\n| Footage | full bleed | video, photo, document or data card; never a vertical frame pillar-boxed in the middle |\n| Caption card | left aligned at x 120; Chinese baseline y ≈ 948, English baseline y ≈ 1014 | one line per language, never wrapped |\n| Channel bug | top left, x 96 y 52, 46 px high | yellow block with a fictional channel name + topic in Chine",
+      "pacing": "- **Cuts on a 120 BPM half-beat grid** (every cut at a multiple of 0.5 s). Footage shots 1.5–3 s; data cards and documents 3–4.5 s; a shot that holds a comparison stays until every item has been fully on screen ≥ 2.5 s.\n- **Captions cross cuts.** A caption can run over two shots (picture changes, words don't); captions change at most every ~2.5 s even when shots change every 1.5 s. Reading time, n",
+      "type": "- **Chinese line**: Noto Sans SC 900, 88 px (verdict lines 110 px), ivory `#F7F5EF`, 20 px dark soft shadow. Split into 2–3 chunks with `|` in the timeline; each chunk slams 0.12 s after the previous: scale 1.3 → 1 in 0.13 s (back ease, overshoot 1.6), opacity full in 0.04 s.\n- **Keyword**: `{…}` inside a chunk; a honey-yellow block `#FFC21A` wipes left → right in 0.12 s behind it, text turns ink ",
+      "color": "- **Ledger card** (the data-card ground): `#151512` sheet, faint ruled lines every 54 px (4.5 % white), a thin red double margin at x 78/86 — the \"account book\" that ties every chart together. It slides in from the right over 0.18 s; inside, a slow push (×1.025–1.03 over the shot).\n- **Colour meaning**: honey `#FFC21A` = the point / gains / the highlight; red `#FF4A3D` = losses, the spike, the bad",
+      "captions": "- **Keyword**: `{…}` inside a chunk; a honey-yellow block `#FFC21A` wipes left → right in 0.12 s behind it, text turns ink `#0E0E0C`. One keyword per caption, at most.\n- **One line per language, always.** If either language would wrap, split the sentence into two captions. A caption is on screen ≥ 1.8 s and ideally ≥ the spoken line + 0.6 s; the Chinese is a paraphrase short enough to read in that",
+      "transitions": "- **Cuts on a 120 BPM half-beat grid** (every cut at a multiple of 0.5 s). Footage shots 1.5–3 s; data cards and documents 3–4.5 s; a shot that holds a comparison stays until every item has been fully on screen ≥ 2.5 s.\n- **Captions cross cuts.** A caption can run over two shots (picture changes, words don't); captions change at most every ~2.5 s even when shots change every 1.5 s. Reading time, n"
+    },
+    "createdAt": "2026-10-29T00:00:00Z",
+    "engine": "remotion",
+    "previewUrl": "/style-previews/caption-news.jpg",
+    "previewVideoUrl": "/style-previews/caption-news.mp4",
+    "template": null,
+    "build": "1. **Frame-4 hook** — kicker line, then a giant number in a yellow block rolling to its value in 0.45 s, then the unit and the subject word (`hook()`).\n2. **Chunk slam with one yellow keyword** (`capCard()`).\n3. **Proportion by darkness** — a yellow line sweeps across the footage to the percentage; what it passed goes grey and dark; the figure appears on the dark side (`shotHalf()`). Works for any \"X % of …\".\n4. **The document says it** — headline or sentence highlighted from PDF bbox coordinates, then the number popped as a yellow block beside the paper (`paper()`, `shotDoc6()`, `shotQuote()`",
+    "palette": [
+      "#F7F5EF",
+      "#FFC21A",
+      "#0E0E0C",
+      "#151512",
+      "#FF4A3D",
+      "#8D8B83",
+      "#5E5C55"
+    ],
+    "category": "Edit & Documentary",
+    "categoryCn": "剪辑与纪实",
+    "nameCn": "字幕新闻",
+    "uses": [
+      "Social news",
+      "Report explainers",
+      "Data shorts"
+    ]
+  },
+  {
+    "id": "chalkboard",
+    "name": "Chalkboard",
+    "source": "builtin",
+    "sourceUrl": "https://github.com/lemomo-ai/lemo-opuscar",
+    "prompt": "A real classroom blackboard on which chalk writes itself, stroke by stroke in true stroke order, with no hand, no chalk stick and no eraser in sight. One idea is taught the way a teacher does it: write what people think, wipe it with one pass, write what is true in the same place.\nReferences (grammar only): a primary-school literacy lesson on a sliding double blackboard; the way a teacher underlines the parts of a character, circles one component and wipes a wrong line. Take the order of a lesson, not any teacher's handwriting.\n\nSuits short lessons on one idea: where a word or a character comes from, a misconception set right, a worked problem. The length follows how many steps the lesson has.",
+    "notes": {
+      "camera": "- Canvas 2D for everything visible; WebGL2 only for the post pass (camera motion blur, a light vignette, grade, dither).\n- Each stroke is baked once into a board-space coverage sprite (coverage, arc length, lateral position). A partial stroke reveals pixels up to the current arc length with a round leading edge; the board's grain decides which grains take the chalk (deposit with a 2×2 supersample ",
+      "pacing": "- 30 fps, continuous (render with `--fps 30`: `core/render/video.mjs` defaults to 24).\n- Chalk speed, measured on our demo: a big character takes about 0.1 s per stroke including the air between strokes (a ten-stroke character about 1 s), labels about 0.04 s per stroke. Writing speeds up rather than making the voice wait, but a big character written much faster than about 0.07 s per stroke stops l",
+      "type": "- Chinese is hand-authored stroke data (centre lines + stroke type per stroke) drawn by the chalk engine, never a font's outline. Every character the topic needs is added to the data and checked against an OFL kai font behind it before shooting (how: §10, *New characters*).\n- English on the board is a single-line OFL handwriting font (EMS family) drawn by the same engine; symbols missing from the ",
+      "color": "- Canvas 2D for everything visible; WebGL2 only for the post pass (camera motion blur, a light vignette, grade, dither).\n- Each stroke is baked once into a board-space coverage sprite (coverage, arc length, lateral position). A partial stroke reveals pixels up to the current arc length with a round leading edge; the board's grain decides which grains take the chalk (deposit with a 2×2 supersample ",
+      "captions": "- On the board: keywords only, one line of Chinese, the next line English, a size smaller.\n### Voice and subtitles\n- A quiet subtitle plate sits above the bottom safe area: the spoken line in Chinese and a free English translation, one line each, a plain kai face (an OFL subset) on a soft dark plate, in and out with the voice. Long lines are split at sentence ends into several cues.\n- Nothing the ",
+      "transitions": "- Things appear only by being written, wiped, revealed by a sliding panel or by drying. Nothing fades in."
+    },
+    "createdAt": "2026-10-29T00:00:00Z",
+    "engine": "hyperframes",
+    "template": null,
+    "build": "- Canvas 2D for everything visible; WebGL2 only for the post pass (camera motion blur, a light vignette, grade, dither).\n- Each stroke is baked once into a board-space coverage sprite (coverage, arc length, lateral position). A partial stroke reveals pixels up to the current arc length with a round leading edge; the board's grain decides which grains take the chalk (deposit with a 2×2 supersample and a faint powder halo).\n- Chalk edges are firm; loose powder only at the lift-off of a stroke (two to five grains). Never sugar the board.\n- Writing strokes carry a width profile per stroke type (st",
+    "palette": [
+      "#0A0F0C",
+      "#F3EFE4",
+      "#D9D4C6",
+      "#132219",
+      "#0F1C15",
+      "#6A4A2E",
+      "#BDB8A8",
+      "#56705F"
+    ],
+    "category": "Hand-drawn & Painting",
+    "categoryCn": "手绘与绘画",
+    "nameCn": "黑板粉笔",
+    "uses": [
+      "Word origins",
+      "Myth-busting",
+      "Lessons"
+    ],
+    "previewUrl": "/style-previews/chalkboard.jpg",
+    "previewVideoUrl": "/style-previews/chalkboard.mp4"
+  },
+  {
+    "id": "city-symphony",
+    "name": "Time-lapse Symphony",
+    "source": "builtin",
+    "sourceUrl": "https://github.com/lemomo-ai/lemo-opuscar",
+    "prompt": "A city film cut like a piece of minimalist music: time-lapse turns traffic, crowds and clouds into rivers of light, the cuts get denser with the score's subdivisions, one thing is slowed almost to a stop, and the film ends on a hard cut to black on a downbeat. No narrator. The music carries it.\nGrammar learned from the city-symphony tradition and the \"Qatsi\" films (Reggio / Fricke, scores in the Philip Glass manner). Nothing is taken from those films: no footage, no melody, no title lettering, no names in the film.",
+    "notes": {
+      "camera": "- Footage only (2D). Sources mixed freely: tripod time-lapse, long single-camera time-lapse (≥ 12 h, sunrise and sunset in the same frame), hyperlapse, drone aerials (top-down is gold), high-frame-rate slow motion, archive film (pre-1931), photographs (a pair from the same camera position is gold), a scanned page of a historic text.\n- Everything is unified into one **35 mm release-print** look: 1.",
+      "pacing": "- Speed is the main instrument. Shot speeds run from 0.3× to 75×; every speed above 1× uses **frame blending** (a 360° shutter): each output frame averages the source frames it covers, capped at N frames. Headlights become continuous lines, crowds become fog, clouds become water.\n- **Speed ramps** are smooth (smoothstep between key speeds) and always mean something: a corridor accelerates out of r",
+      "type": "- Latin: **Michroma** (OFL), capitals, tracking 0.06–0.32 em. Chinese: **Noto Sans SC** variable, weight 300–350, tracking 0.08–0.14 em. Credits: Noto Sans SC 17 px.\n- **Left-aligned**, left margin 168–196 px, never centred, never on a box. Legibility comes from a very soft elliptical darkening behind the block (α ≤ 0.6), not a panel.\n- **Number card**: the number in Michroma 84 px (44 px when thr",
+      "color": "- Footage only (2D). Sources mixed freely: tripod time-lapse, long single-camera time-lapse (≥ 12 h, sunrise and sunset in the same frame), hyperlapse, drone aerials (top-down is gold), high-frame-rate slow motion, archive film (pre-1931), photographs (a pair from the same camera position is gold), a scanned page of a historic text.\n- Everything is unified into one **35 mm release-print** look: 1.",
+      "captions": "- `.srt`: the film has no voice, so the subtitle file carries the on-screen text (one Chinese and one English line per cue) for muted or accessible playback.",
+      "transitions": "- Camera moves are added sparingly in post: slow push-ins (1.00 → 1.05–1.10 over the shot), a falling push on the opening still (1.0 → 1.3 in 0.35 s, ease-out, then accelerating to ×2 by the cut). No shakes, no whip pans, no digital zooms past the upscale limit."
+    },
+    "createdAt": "2026-10-29T00:00:00Z",
+    "engine": "hyperframes",
+    "previewUrl": "/style-previews/city-symphony.jpg",
+    "previewVideoUrl": "/style-previews/city-symphony.mp4",
+    "template": null,
+    "build": "- Footage only (2D). Sources mixed freely: tripod time-lapse, long single-camera time-lapse (≥ 12 h, sunrise and sunset in the same frame), hyperlapse, drone aerials (top-down is gold), high-frame-rate slow motion, archive film (pre-1931), photographs (a pair from the same camera position is gold), a scanned page of a historic text.\n- Everything is unified into one **35 mm release-print** look: 1.85:1 matte (21 px bars on 1920×1080), warm highlights, lifted blacks, highlight bloom, clumped mid-tone grain, ±0.5 px gate weave, soft vignette.\n- Never generated images; never restored, colourised o",
+    "palette": [
+      "#EDE8DF",
+      "#B0AAA0",
+      "#D9772F",
+      "#000000"
+    ],
+    "category": "Edit & Documentary",
+    "categoryCn": "剪辑与纪实",
+    "nameCn": "延时交响",
+    "uses": [
+      "City films",
+      "Music montages",
+      "Openers"
+    ]
+  },
+  {
+    "id": "countdown",
+    "name": "Live Countdown Split-screen",
+    "source": "builtin",
+    "sourceUrl": "https://github.com/lemomo-ai/lemo-opuscar",
+    "prompt": "An edit style, not a look. Real footage of one event with a known zero (a launch, a verdict, a final whistle, polls closing), shown in real time: screen time equals event time, a clock ticks every second, and the screen splits into more and more cells as the moment nears, every cell showing the same second. At zero the cells merge into one picture and the clock flips.\nReferences (grammar only): the real-time clock and splitting screens of the TV series *24*; the multi-camera archive panels and mission-time codes of the documentary *Apollo 11* (2019). Never copy their type, colours, sounds, graphics or shots, and never name them in the film.",
+    "notes": {
+      "camera": "- **Three kinds of material at once**: video cameras of the same moment (2–8), documents (a fact sheet, a filing, a schedule: shown as paper, never retyped as a slide), and photographs (the people of the day). Our own type explains them; type printed in the material is only picture.\n- **Data drawn by us**: checklists, bars, a flight or process profile, a second countdown to the next milestone. Eve",
+      "pacing": "- 30 fps. Clock: on each whole second the new digits drop 14 px in 0.12 s (ease-out); the sub-second bar empties one segment per 0.1 s (fills after zero).\n- Re-layout: 0.34 s `easeInOutCubic`. Cells that stay interpolate their rectangles; new cells open from their left edge; leaving cells close to the left; a new cell flashes a 3 px orange border for ~0.2 s when it lands. A grid filling up pops on",
+      "type": "- Clock digits: a condensed sans with fixed-width digit slots (ours: Barlow Condensed SemiBold, drawn digit by digit in equal slots so the clock never jitters); size up to 132 px, the T−/T+ sign at 0.85×, tenths at 0.41× in grey, a ten-segment sub-second bar under it.\n- Chinese: a sturdy sans (ours: Noto Sans SC 500/700, subset). English text: a clean grotesque (Barlow). Labels, codes and English ",
+      "color": "- **Three kinds of material at once**: video cameras of the same moment (2–8), documents (a fact sheet, a filing, a schedule: shown as paper, never retyped as a slide), and photographs (the people of the day). Our own type explains them; type printed in the material is only picture.\n- **Data drawn by us**: checklists, bars, a flight or process profile, a second countdown to the next milestone. Eve",
+      "captions": "- **The live transcript is the subtitle.** A fixed box (bottom right, or a cell in the grid): a speaking light and the speaker type (commentary / loop / narrator — the narrator, our own voice, is marked in orange so it is never mistaken for the event's audio), the English line appearing word by word at the spoken times (0.08 s fade per word, a block cursor), the Chinese line whole when its cue sta",
+      "transitions": "- Swaps (one source replaces another in the same rectangle) wipe in from the left. Hard cuts only between full-screen sources.\n- Never: slow push-ins on video to fake motion, page-turn transitions, centred pop-up words, speed ramps.\n- **Cut points are calls.** Each layout change starts on the first word of a real call in the native audio (\"ten\", \"go for…\", \"ignition\", a name) or on an event visibl"
+    },
+    "createdAt": "2026-10-29T00:00:00Z",
+    "engine": "remotion",
+    "previewUrl": "/style-previews/countdown.jpg",
+    "previewVideoUrl": "/style-previews/countdown.mp4",
+    "template": null,
+    "build": "- **Three kinds of material at once**: video cameras of the same moment (2–8), documents (a fact sheet, a filing, a schedule: shown as paper, never retyped as a slide), and photographs (the people of the day). Our own type explains them; type printed in the material is only picture.\n- **Data drawn by us**: checklists, bars, a flight or process profile, a second countdown to the next milestone. Every number comes from an official source (§10).\n- **Cells**: hard rectangles on near-black `#06080A`, 24 px outer margin, 8–9 px gutters, 1 px border `rgba(222,232,238,.16)`, a light radial vignette (t",
+    "palette": [
+      "#06080A",
+      "#0B0E11",
+      "#F2F5F7",
+      "#7C878D",
+      "#FF5B1F",
+      "#FF3B30",
+      "#0A0B0C"
+    ],
+    "category": "Edit & Documentary",
+    "categoryCn": "剪辑与纪实",
+    "nameCn": "实时倒计时分屏",
+    "uses": [
+      "Launches",
+      "Countdowns",
+      "Live events"
+    ]
+  },
+  {
+    "id": "crayon-book",
+    "name": "Crayon Picture Book",
+    "source": "builtin",
+    "sourceUrl": "https://github.com/lemomo-ai/lemo-opuscar",
+    "prompt": "A picture-book page drawn live in wax crayon on toothy paper, with a watercolour wash that reveals what the crayon was hiding.\nReferences (grammar only): Raymond Briggs' *The Snowman* (1982) (hand-textured frames that breathe, wordless tenderness, a lyrical passage carried by one tune, still backgrounds with living figures). Copy none of its characters, song or imagery, and never name it in the film.",
+    "notes": {
+      "camera": "- **Paper**: warm off-white (around `#f4efe3`). The tooth is **anchored to the page** (it pans with the camera; on zoom two octaves cross-fade so grains stay ~1 px on screen), never screen-fixed: three octaves of value noise plus a horizontal fibre term. A final pass embosses it (lit top-left), less where wax filled the tooth. Low mottling ±2 %, warm vignette.\n- **Wax adhesion (the core rule)**: e",
+      "pacing": "- **Everything drawn steps at 12 fps** (lines, colouring, characters, boil seed); camera, the wash's leading edge and twinkles run at 24 fps.\n- **Boil**: each stroke re-jitters offset (<1 px), wobble and hatching rows every 2 frames. Characters full, background lines ~0.6, background colouring still (it also halves the bitrate). Calm the boil to about half when the film goes quiet.\n- **Drawing on*",
+      "type": "- Subtitles are **the book's printed words**: a handwriting face (Patrick Hand, OFL), 50–56 px, in the outline colour, bottom-centre, each glyph tilted and offset, boiling on twos, written left→right in ~0.35 s, on a ragged knock-out patch of blank paper (never a dark box). Hold ≥ max(1.8 s, speech + 0.6 s); none during wordless music.\n- Titles are hand-lettered on the page (Gaegu Bold or similar)",
+      "color": "- **Paper**: warm off-white (around `#f4efe3`). The tooth is **anchored to the page** (it pans with the camera; on zoom two octaves cross-fade so grains stay ~1 px on screen), never screen-fixed: three octaves of value noise plus a horizontal fibre term. A final pass embosses it (lit top-left), less where wax filled the tooth. Low mottling ±2 %, warm vignette.\n- **Wax adhesion (the core rule)**: e",
+      "captions": "- Subtitles are **the book's printed words**: a handwriting face (Patrick Hand, OFL), 50–56 px, in the outline colour, bottom-centre, each glyph tilted and offset, boiling on twos, written left→right in ~0.35 s, on a ragged knock-out patch of blank paper (never a dark box). Hold ≥ max(1.8 s, speech + 0.6 s); none during wordless music.",
+      "transitions": "- **Everything drawn steps at 12 fps** (lines, colouring, characters, boil seed); camera, the wash's leading edge and twinkles run at 24 fps.\n- **Boil**: each stroke re-jitters offset (<1 px), wobble and hatching rows every 2 frames. Characters full, background lines ~0.6, background colouring still"
+    },
+    "createdAt": "2026-10-29T00:00:00Z",
+    "previewUrl": "/style-previews/crayon-book.jpg",
+    "previewVideoUrl": "/style-previews/crayon-book.mp4",
+    "engine": "remotion",
+    "template": {
+      "sha256": "6372e9aa24c55080f0af89b05e253d884f9d48f7da9de98a702a6058e0a8047d",
+      "size": 9673,
+      "version": 1
+    },
+    "build": "- **Paper**: warm off-white (around `#f4efe3`). The tooth is **anchored to the page** (it pans with the camera; on zoom two octaves cross-fade so grains stay ~1 px on screen), never screen-fixed: three octaves of value noise plus a horizontal fibre term. A final pass embosses it (lit top-left), less where wax filled the tooth. Low mottling ±2 %, warm vignette.\n- **Wax adhesion (the core rule)**: every crayon layer is a canvas where RGB = colour and **A = pressure**; the shader deposits wax where `tooth > 1 − k·pressure` (soft edge). Light pressure = speckled peaks; heavy = almost solid, slight",
+    "palette": [
+      "#F4EFE3",
+      "#2D3263",
+      "#F6C945",
+      "#EE8EA4",
+      "#2B2F5E",
+      "#2C3B6E",
+      "#F5C63C",
+      "#EC8A3C"
+    ],
+    "category": "Hand-drawn & Painting",
+    "categoryCn": "手绘与绘画",
+    "nameCn": "蜡笔儿童绘本",
+    "uses": [
+      "Picture books",
+      "Bedtime stories",
+      "Kids' learning"
+    ]
+  },
+  {
+    "id": "dataviz",
+    "name": "Data Storytelling",
+    "source": "builtin",
+    "sourceUrl": "https://github.com/lemomo-ai/lemo-opuscar",
+    "prompt": "A chart that tells a story: real data, drawn mark by mark on cream paper by a red–blue pencil, with handwritten notes pinned to the numbers. The chart itself is the camera, the rhythm and the plot.\nReferences (grammar only): Hans Rosling's *200 Countries, 200 Years, 4 Minutes* (one dot is a character), Ed Hawkins' warming stripes (a diverging ramp on a reference mean, no axes), The Pudding / NYT scrollytelling (one idea at a time, growing axes, pinned notes). Copy none of their charts, layouts or typefaces; never name them in the film.",
+    "notes": {
+      "camera": "- **Paper**: warm cream, fixed-seed fibre noise and a faint dot grid in world space. **Ink**: dark warm ink for axes and series, pale warm grey for grid and zero line, IBM Plex Mono ticks.\n- **Marks**: data dots carry a thin ink ring so pale values stay visible on cream. A mark lands with a short pop and a thin ripple; suppress ripples when marks arrive closer than ~0.1 s.\n- **Handwriting** (Cavea",
+      "pacing": "- **The rhythm of the data is the rhythm of the film.** Map the marks to a musical grid; to accelerate, one option is to **divide the beat instead of changing tempo**. Pick a tempo whose finest subdivision lands on whole frames (at 24 fps a minute has 1440 frames; the count of finest notes per minute must divide it), so picture and sound never drift.\n- **Pencil acting**: lift before each tap, land",
+      "type": "- **The subtitle is the figure caption**: a text serif (Newsreader), ink colour, left-aligned with the chart, ≤ 2 lines, with a hairline rule above it and a small mono kicker for the range drawn so far. Words appear on their whisper timestamps over a paper-colour band. Hold ≥ max(1.8 s, speech + 0.6 s).\n- The title is the **chart's own headline** (Newsreader), set in world space above the plot; it",
+      "color": "- **Paper**: warm cream, fixed-seed fibre noise and a faint dot grid in world space. **Ink**: dark warm ink for axes and series, pale warm grey for grid and zero line, IBM Plex Mono ticks.\n- **Marks**: data dots carry a thin ink ring so pale values stay visible on cream. A mark lands with a short pop and a thin ripple; suppress ripples when marks arrive closer than ~0.1 s.\n- **Handwriting** (Cavea",
+      "captions": "- **The subtitle is the figure caption**: a text serif (Newsreader), ink colour, left-aligned with the chart, ≤ 2 lines, with a hairline rule above it and a small mono kicker for the range drawn so far. Words appear on their whisper timestamps over a paper-colour band. Hold ≥ max(1.8 s, speech + 0.6 s).\n- No captions over a signature chart operation or a silence.",
+      "transitions": "- **Morph**: a staggered sweep, each mark easing into its new form; notes fade as it passes and return as tiny marks.\n- **No fades to blank or dissolves.** Transitions are chart operations: axis growth, pull-backs, rescales, morphs, a cell widening into the next frame."
+    },
+    "createdAt": "2026-10-29T00:00:00Z",
+    "engine": "remotion",
+    "template": {
+      "sha256": "5df9bec9cc4c7feb28640b9f5d8d40a0e7f151a6c72f8f901fb2a0e4f8349cd0",
+      "size": 9455,
+      "version": 1
+    },
+    "build": "- **Paper**: warm cream, fixed-seed fibre noise and a faint dot grid in world space. **Ink**: dark warm ink for axes and series, pale warm grey for grid and zero line, IBM Plex Mono ticks.\n- **Marks**: data dots carry a thin ink ring so pale values stay visible on cream. A mark lands with a short pop and a thin ripple; suppress ripples when marks arrive closer than ~0.1 s.\n- **Handwriting** (Caveat) in pencil, per-glyph jitter, graphite grain, written on as the tip dances over the x-height. Leaders are wobbly curves ending in an **un-closed** ring around the mark.\n- **The red–blue pencil**: he",
+    "palette": [
+      "#F6F3EC",
+      "#E4DDCF",
+      "#2B2723",
+      "#6E665C",
+      "#DDD6C9",
+      "#2F5D8A",
+      "#A8283A",
+      "#3A3733"
+    ],
+    "category": "Information & Keynote",
+    "categoryCn": "信息与发布",
+    "nameCn": "数据叙事",
+    "uses": [
+      "Data journalism",
+      "Reports",
+      "Climate & science"
+    ],
+    "previewUrl": "/style-previews/dataviz.jpg",
+    "previewVideoUrl": "/style-previews/dataviz.mp4"
+  },
+  {
+    "id": "iso-infographic",
+    "name": "Isometric Infographic",
+    "source": "builtin",
+    "sourceUrl": "https://github.com/lemomo-ai/lemo-opuscar",
+    "prompt": "A system diagram comes alive: an isometric diorama of flat three-tone blocks, thin ink labels and Isotype numbers, where things open up to show their insides and the numbers are drawn, not stated.\nReferences (grammar only): *Monument Valley* (true-isometric architecture, flat colour blocks, three fixed tones per face, a camera that pans and zooms but never breaks the projection); *SimCity 2000*-style cutaway dioramas (a floating board with soil strata, the whole system visible at once); Kurzgesagt (a question, a steady push forward, one clear visual metaphor per step, a change of scale when a number is too big to feel); Isotype, Otto Neurath / Gerd Arntz (repeated identical icons stand for quantity); *Powers of Ten* (a continuous dive through nested scales). Use none of their characters, buildings, icons, palettes or music.",
+    "notes": {
+      "camera": "- **Projection**: axes at 30°. `sx = (x − y)·cos30°·k`, `sy = ((x + y)·½ − z)·k`; x runs down-right, y down-left, z up; painter depth = x + y + z. Everything is queued and depth-sorted, then flushed.\n- **Three tones per face** chosen from its normal: top light, left (+y) mid, right (+x) dark. Derive tones from one base colour: mix toward warm white ~20 % for the top and toward a cool dark (e.g. `#",
+      "pacing": "- **Nothing moves without a line leading it**: a route line is drawn slightly ahead, a leader grows before an inset opens, a cut line draws before a skin slides away.\n- **Cutaway**: cut line (~0.3 s) → the near skin slides out along its normal and fades (~0.35 s, ease-out) → hatched section rims fade in over the last part.\n- **Isotype fill**: icons pop with a back-ease (overshoot), one per subdivi",
+      "type": "- One geometric sans (e.g. Jost): titles 600 all caps with ~0.12 em tracking, numbers 400 large (~44 px), units at half size. All text has a ~7 px halo in the ground colour so it reads over any block.\n- **Label pins**: dot (ink ring, pale fill) → vertical leader → horizontal rule → text. Pins point up or down, left or right, chosen per station so labels never cover the subject.\n- **Titles** can be",
+      "color": "- **Projection**: axes at 30°. `sx = (x − y)·cos30°·k`, `sy = ((x + y)·½ − z)·k`; x runs down-right, y down-left, z up; painter depth = x + y + z. Everything is queued and depth-sorted, then flushed.\n- **Three tones per face** chosen from its normal: top light, left (+y) mid, right (+x) dark. Derive tones from one base colour: mix toward warm white ~20 % for the top and toward a cool dark (e.g. `#",
+      "captions": "- **The subtitle is a map label**: a pale card with a small radius and an ink border, a tiny iso cube as legend chip, sans ~42 px, bottom-centre; border draws first, text wipes in. Keep the bottom ~170 px clear for it. Hold ≥ max(1.8 s, speech + 0.6 s); lines never overlap titles or other lines.",
+      "transitions": "- **Nothing moves without a line leading it**: a route line is drawn slightly ahead, a leader grows before an inset opens, a cut line draws before a skin slides away.\n- **Cutaway**: cut line (~0.3 s) → the near skin slides out along its normal and fades (~0.35 s, ease-out) → hatched section rims fade in over the last part."
+    },
+    "createdAt": "2026-10-29T00:00:00Z",
+    "engine": "hyperframes",
+    "template": null,
+    "build": "- **Projection**: axes at 30°. `sx = (x − y)·cos30°·k`, `sy = ((x + y)·½ − z)·k`; x runs down-right, y down-left, z up; painter depth = x + y + z. Everything is queued and depth-sorted, then flushed.\n- **Three tones per face** chosen from its normal: top light, left (+y) mid, right (+x) dark. Derive tones from one base colour: mix toward warm white ~20 % for the top and toward a cool dark (e.g. `#231A2C`) ~22 % for the dark side, so shadows are slightly cool.\n- **Ink lines** (2 px) only for infographic elements: leaders, pins, cut lines, rings, routes, labels.\n- **The board**: floats on a pale",
+    "palette": [
+      "#231A2C",
+      "#FFF7E6",
+      "#CF5140",
+      "#B3352B",
+      "#8C2620",
+      "#7BA75F",
+      "#5E8C4A",
+      "#476F37"
+    ],
+    "category": "Information & Keynote",
+    "categoryCn": "信息与发布",
+    "nameCn": "等距信息图",
+    "uses": [
+      "Process explainers",
+      "Supply chains",
+      "Annual reports"
+    ],
+    "previewUrl": "/style-previews/iso-infographic.jpg",
+    "previewVideoUrl": "/style-previews/iso-infographic.mp4"
+  },
+  {
+    "id": "kino-montage",
+    "name": "Constructivist Montage",
+    "source": "builtin",
+    "sourceUrl": "https://github.com/lemomo-ai/lemo-opuscar",
+    "prompt": "Real archive footage, photographs and documents, printed as one ink-and-paper poster with a single red, and cut on a machine beat. Diagonal bands carry the type; windows cut along the axis hold the film; people are scissored out of photographs and stacked into structures; numbers count, documents are marked in red, and two images collide to make a third idea.\nReferences (grammar only): Soviet montage cinema of the 1920s (city symphonies with split screens, counting and machine rhythm; \"intellectual\" montage where A + B yields a concept), constructivist posters and photomontage (red / black / paper, steep diagonals, photo cut-outs with geometric blocks, type as structure). Never copy their shots, layouts, slogans or lettering, and never name them in the film.",
+    "notes": {
+      "camera": "- **Four kinds of element only**: **bands** (red or ink, along the axis), **windows** (rectangles or parallelograms holding film or photographs), **cut-outs** (people scissored from photographs with a paper-white border), **type blocks**. Plus one paper-fibre texture over everything.\n- **The print grade** (one function for film, photos and documents): luminance → percentile stretch (film: one pair",
+      "pacing": "- **Grid**: one tempo for picture and score (120 BPM: beat 0.5 s, bar 2 s). Every cut, slam, wipe and count lands on a beat, half-beat or sixteenth. The page exports these times as `window.EV`; the mix reads the same list.\n- **Shot length**: 0.5–2 s for footage; one idea per shot. A section may accelerate by halving: 0.5 → 0.25 → 0.125 s (never shorter than 3 frames). Holds are reserved for readin",
+      "type": "| Use | Face | Size (1080p) |\n|---|---|---|\n| Chinese display, slogans | Noto Sans SC 900 (subset) | 110–210 px; stacked vertically 170 px per character |\n| Numbers, English display | Oswald 600–700 | numbers 230–440 px; English lines 30–62 px, letter-spacing 2–10 px, capitals |\n| Source and footage tags | Space Mono Bold (CJK falls back to Noto) | 17–18 px on an ink or red tab, padding 6 |\n| Subt",
+      "color": "- **Four kinds of element only**: **bands** (red or ink, along the axis), **windows** (rectangles or parallelograms holding film or photographs), **cut-outs** (people scissored from photographs with a paper-white border), **type blocks**. Plus one paper-fibre texture over everything.\n- **The print grade** (one function for film, photos and documents): luminance → percentile stretch (film: one pair",
+      "captions": "| Subtitles | Noto Sans SC 700 40 px over Oswald 500 28 px | bottom left, ink bar at 90 %, a 10 px red tick |\n- **Placement**: along the −18° axis on a band, or as an ink / red block; never centred on the frame, never a header. Numbers can be bigger than the words that explain them.\n- **Subtitles** stay bottom-left in a 960–1056 px strip; key type keeps above y 930 while narration runs. Subtitles ",
+      "transitions": "- **Grid**: one tempo for picture and score (120 BPM: beat 0.5 s, bar 2 s). Every cut, slam, wipe and count lands on a beat, half-beat or sixteenth. The page exports these times as `window.EV`; the mix reads the same list.\n- **Cut rule**: adjacent shots conflict in at least one of direction (left slam / right slam), value (paper / ink ground), or geometry (diagonal band / upright window). Never tw"
+    },
+    "createdAt": "2026-10-29T00:00:00Z",
+    "engine": "remotion",
+    "previewUrl": "/style-previews/kino-montage.jpg",
+    "previewVideoUrl": "/style-previews/kino-montage.mp4",
+    "template": null,
+    "build": "- **Four kinds of element only**: **bands** (red or ink, along the axis), **windows** (rectangles or parallelograms holding film or photographs), **cut-outs** (people scissored from photographs with a paper-white border), **type blocks**. Plus one paper-fibre texture over everything.\n- **The print grade** (one function for film, photos and documents): luminance → percentile stretch (film: one pair of percentiles per clip, so it never pumps; 0.7 / 99.5; photos 0.8 / 99.4) → S-curve `x + s·(x−0.5)·(1−|2x−1|)·2`, s = 0.32 (documents 0.18, they keep their paper) → map to ink→paper: `rgb = INK + (P",
+    "palette": [
+      "#D52B1E",
+      "#141210",
+      "#EDE4D0"
+    ],
+    "category": "Edit & Documentary",
+    "categoryCn": "剪辑与纪实",
+    "nameCn": "构成主义蒙太奇",
+    "uses": [
+      "Industry histories",
+      "Milestones",
+      "Collective effort"
+    ]
+  },
+  {
+    "id": "lidar-survey",
+    "name": "LiDAR Survey",
+    "source": "builtin",
+    "sourceUrl": "https://github.com/lemomo-ai/lemo-opuscar",
+    "prompt": "Real airborne laser points of a real place, floating in the dark as a measured cloud; a scan line or a cutting plane passes through them and the points condense into a solid, raking-lit surface, which is then measured with hairline instruments. One designed camera move carries the whole film: the cloud is something you fly through, not a picture you look at.\nReferences (grammar only): survey and archaeology lidar visualisations (colour as height, the canopy removed); architectural section drawings (a cut, dimensioned); museum film cadence (one held reading per screen). Copy none of their layouts, ramps, typefaces or music, and never name them in the film.",
+    "notes": {
+      "camera": "- **Points**: GL points sized in world units (0.12–0.3 m), floor of one output pixel, soft discs, opaque and depth-tested (additive only for a ghost layer); colour from height or class, value from intensity; distance fog.\n- **Quantise for the browser**: uint16 positions (2 cm / 1 cm) plus a byte each for height above ground, class, intensity, seed.\n- **Height above ground** for every return (minus",
+      "pacing": "- On ones, 24 fps; the camera never stops; keys as a C1 spline in target / distance / heading / pitch (no `lookAt` from nadir).\n- The front moves on an ease, slowest where the subject is; a cutting plane steps on the beat (eased steps, short holds) so the layers read.\n- Points appear behind a front or by height, never by random fade-in across the whole frame.\n- Readings land with a small pop; trac",
+      "type": "- **Roles**: light condensed numerals for readings (110–130 px, e.g. Barlow Condensed 300); a monospace for instruments, coordinates, counts and source lines (19–22 px, e.g. IBM Plex Mono); a sans for labels in the film's language (24–36 px, e.g. Noto Sans SC 500). OFL, self-hosted, CJK subset to the characters used.\n- **Instruments** in one corner: place, coordinates, area, data source, point cou",
+      "color": "- **Points**: GL points sized in world units (0.12–0.3 m), floor of one output pixel, soft discs, opaque and depth-tested (additive only for a ghost layer); colour from height or class, value from intensity; distance fog.\n- **Quantise for the browser**: uint16 positions (2 cm / 1 cm) plus a byte each for height above ground, class, intensity, seed.\n- **Height above ground** for every return (minus",
+      "captions": "- **Subtitles**: a transcript strip bottom-left (2 px rule, plate fading right), one line per language measured with the real font, split rather than wrapped; if bilingual, the film's language on top.\n- Nothing below 19 px at 1080p. Hold subtitles ≥ max(1.8 s, speech + 0.6 s); labels ≥ characters ÷ 4.5 + 1.5 s (CJK), letters ÷ 15 + 1.5 s (Latin).",
+      "transitions": "- The front moves on an ease, slowest where the subject is; a cutting plane steps on the beat (eased steps, short holds) so the layers read.\n- Points appear behind a front or by height, never by random fade-in across the whole frame."
+    },
+    "createdAt": "2026-10-29T00:00:00Z",
+    "engine": "remotion",
+    "previewUrl": "/style-previews/lidar-survey.jpg",
+    "previewVideoUrl": "/style-previews/lidar-survey.mp4",
+    "template": null,
+    "build": "- **Points**: GL points sized in world units (0.12–0.3 m), floor of one output pixel, soft discs, opaque and depth-tested (additive only for a ghost layer); colour from height or class, value from intensity; distance fog.\n- **Quantise for the browser**: uint16 positions (2 cm / 1 cm) plus a byte each for height above ground, class, intensity, seed.\n- **Height above ground** for every return (minus a ground model triangulated from class-2 returns) drives the colour ramp, the cutting plane and the ruler.\n- **The solid surface**: a 0.5–1 m mesh of the ground or surface model, smooth normals, bake",
+    "palette": [
+      "#05080A",
+      "#1F3F35",
+      "#5C9A7A",
+      "#E2F3DC",
+      "#C8B38C",
+      "#BDB5A6",
+      "#D4FFF0",
+      "#FFB347"
+    ],
+    "category": "Evidence Films",
+    "categoryCn": "实证影像",
+    "nameCn": "点云测绘",
+    "uses": [
+      "Heritage",
+      "Environment",
+      "Site surveys"
+    ]
+  },
+  {
+    "id": "midcentury-toon",
+    "name": "Mid-century Cartoon",
+    "source": "builtin",
+    "sourceUrl": "https://github.com/lemomo-ai/lemo-opuscar",
+    "prompt": "1950s flat colour and limited animation for \"follow along\" films: colour printed a few pixels off its broken ink line, bodies that hold still while hands do the work, abstract colour-block rooms, a calm classroom narrator, and a cool-jazz combo.\nReferences (grammar only): UPA's early-1950s shorts (*Gerald McBoing-Boing*, *Rooty Toot Toot*): colour and line on separate cels, geometric people, colour-plane backgrounds, limited animation. 1950s classroom films (Coronet, Encyclopaedia Britannica): direct address, one sentence per picture, numbered cards. Charley Harper and Mary Blair: soft atomic-age complements, geometric figures. 1950s appliance manuals: numbered medallions, curved arrows, round call-outs, sunbursts. Copy none of their characters, drawings, lettering or music, and never name them in a film.\n\nA **scene style**: it performs a real use (a set-up guide, a how-to, a recipe card, a safety card) rather than telling a story. The viewer should come away able to do the thing. See §11 for the jobs.",
+    "notes": {
+      "camera": "- **Off-register cels**: fill drawn with a small offset (a few px, down-right) from its line; the offset jitters ±1–2 px on twos. Keep it on everything, text included; switch it off only for a crisp diagram.\n- **Line**: 3–5 px ink ribbons with ±40 % width breathing and 12–25 % breaks. Characters ~4 px, props 3–4.5 px, walls in plans thicker and broken. Hands: one outline around the union of palm a",
+      "pacing": "- **On twos:** poses, hand shapes and the cel jitter change at 12 fps. The camera, iris wipes, arrows, plan routes and rays move at 24 fps.\n- **Held body, moving hands:** switch poses with a single in-between. A hand action has anticipation (pull back or lift), a fast action (0.15–0.25 s, eased out), a follow-through (recoil, settle, lift away) and lands exactly on a beat.\n- **Pop-ins:** medallion",
+      "type": "- Roles: a 1950s script for a kicker (Oleo Script Bold); a slab serif (Alfa Slab One) for titles, numerals and headers, in ink over an offset colour plate; a geometric sans (Jost 500/600) for body, details, labels and captions.\n- **Caption card**: a paper-coloured rounded slab with a thin ink border (its colour cel offset too), small turning stars at the ends, ~40 px sans, bottom-centre. Fades in ",
+      "color": "- **Off-register cels**: fill drawn with a small offset (a few px, down-right) from its line; the offset jitters ±1–2 px on twos. Keep it on everything, text included; switch it off only for a crisp diagram.\n- **Line**: 3–5 px ink ribbons with ±40 % width breathing and 12–25 % breaks. Characters ~4 px, props 3–4.5 px, walls in plans thicker and broken. Hands: one outline around the union of palm a",
+      "captions": "- Roles: a 1950s script for a kicker (Oleo Script Bold); a slab serif (Alfa Slab One) for titles, numerals and headers, in ink over an offset colour plate; a geometric sans (Jost 500/600) for body, details, labels and captions.\n- **Caption card**: a paper-coloured rounded slab with a thin ink border (its colour cel offset too), small turning stars at the ends, ~40 px sans, bottom-centre. Fades in ",
+      "transitions": "- **On twos:** poses, hand shapes and the cel jitter change at 12 fps. The camera, iris wipes, arrows, plan routes and rays move at 24 fps."
+    },
+    "createdAt": "2026-10-29T00:00:00Z",
+    "engine": "hyperframes",
+    "template": null,
+    "build": "- **Off-register cels**: fill drawn with a small offset (a few px, down-right) from its line; the offset jitters ±1–2 px on twos. Keep it on everything, text included; switch it off only for a crisp diagram.\n- **Line**: 3–5 px ink ribbons with ±40 % width breathing and 12–25 % breaks. Characters ~4 px, props 3–4.5 px, walls in plans thicker and broken. Hands: one outline around the union of palm and fingers, thin finger separations.\n- **Shading**: one flat darker plane clipped inside a shape, never a gradient. Drop shadows are a copy of the shape offset down-right in a paper shade at ~50 %.\n- ",
+    "palette": [
+      "#F0B4A8",
+      "#F4EAD5",
+      "#CBD08E",
+      "#B5C8DE",
+      "#FBF6EA",
+      "#6E4A6B",
+      "#A8704A",
+      "#7E8538"
+    ],
+    "category": "Cartoon & Anime",
+    "categoryCn": "卡通与动画",
+    "nameCn": "50s 扁平卡通",
+    "uses": [
+      "Set-up guides",
+      "Help centres",
+      "How-to"
+    ],
+    "previewUrl": "/style-previews/midcentury-toon.jpg",
+    "previewVideoUrl": "/style-previews/midcentury-toon.mp4"
+  },
+  {
+    "id": "news-package",
+    "name": "Broadcast News Package",
+    "source": "builtin",
+    "sourceUrl": "https://github.com/lemomo-ai/lemo-opuscar",
+    "prompt": "A television newsroom's on-air package, built entirely in code: a sting that becomes the channel bug, a rundown of today's stories that opens and closes the bulletin, a lower-third strap that never leaves the bottom of the frame, and full-frame graphics (split-flap price boards, a line breaking a threshold, explainer maps, documents flying out of a city, quote cards, spec cards with proportion bars, stamps) that carry the facts. The style is the **package system plus its cutting rules**, not a drawing style. 16:9, a clean frame: no burned-in subtitles, no news crawl.\nReferences (grammar only): evening network news headline menus, financial-channel market graphics, European news channels' explainer maps, tech-desk spec cards. Never copy a broadcaster's logo, set, fonts, colours, music or idents, and never name them in the film.",
+    "notes": {
+      "camera": "| Zone | Position | Content |\n|---|---|---|\n| Content | x 96–1824, y 56–840 | the full-frame graphic; when a strap is up, nothing important below y 840 |\n| Lower-third strap | tab x 96 y 856, 48 high; strap x 96 y 904, 1250×104, + 120 px ink end block | category tab (accent, ink text, Chinese + English), headline in Chinese 50 px + one English line 27 px |\n| Source line | right-aligned at x 1836, ",
+      "pacing": "- **120 BPM grid**, beat 0 at the end of the sting (1.5 s). Every cut and wipe on a beat or half-beat.\n- **Shot lengths**: sting 1.5 s; rundown 4–5 s; story shots 3–7 s; a map long take (6–12 s) as the bulletin's breath; a comparison stays until every item has been fully on screen ≥ 2.5 s.\n- **A package action every 0.5–1 s** inside a shot (flip, count, stamp, tick, strap change, map light, line s",
+      "type": "- Chinese: Noto Sans SC 900 (headlines, strap) / 700 (labels).\n- Latin: Barlow Condensed 800 (numbers, names, the plate), 600 (secondary lines, quotes), 600 italic (the end-card English title).\n- Mono: IBM Plex Mono 500 for datelines, sources, axis labels, all caps with 1–4 px tracking.\n- All OFL, subset from Google Fonts by `demo/tools/fonts.sh` (the character list is read from `main.js`; delete ",
+      "color": "| Role | Value | Use |\n|---|---|---|\n| ink | `#121417` | backgrounds, panels, strap end block |\n| ink2 / ink3 | `#1B1E23` / `#22262C` | cards, land on maps |\n| accent (lemon) | `#F2CF1D` (light `#F8DE4A`, dark `#D8B30C`) | plate, tabs, band wipe, bars, stamps, the line that breaks |\n| gold | `#D4B064` | thresholds, datelines, source lines, light fins, badges |\n| paper | `#F4F1E8` | strap, document",
+      "captions": "- Chinese: Noto Sans SC 900 (headlines, strap) / 700 (labels).\n- Latin: Barlow Condensed 800 (numbers, names, the plate), 600 (secondary lines, quotes), 600 italic (the end-card English title).\n- Mono: IBM Plex Mono 500 for datelines, sources, axis labels, all caps with 1–4 px tracking.\n- All OFL, s",
+      "transitions": "- **120 BPM grid**, beat 0 at the end of the sting (1.5 s). Every cut and wipe on a beat or half-beat.\n- **A package action every 0.5–1 s** inside a shot (flip, count, stamp, tick, strap change, map light, line step). No frame flat for more than 1 s; a strong action within 0.5 s of every cut."
+    },
+    "createdAt": "2026-10-29T00:00:00Z",
+    "engine": "remotion",
+    "previewUrl": "/style-previews/news-package.jpg",
+    "previewVideoUrl": "/style-previews/news-package.mp4",
+    "template": null,
+    "build": "| Part | Spec | Rules |\n|---|---|---|\n| Sting | 0–1.5 s | two accent slashes (0.04, 0.10 s) → the plate slams in with an overshoot, an impact ring and shake (0.16–0.42) → letters drop in one by one → wordmark and dateline open from the centre → a glint → the plate flies to the top right and **becomes the bug** while a vertical band wipes into the first shot. A hit within 0.4 s |\n| Brand plate | parallelogram 520×180, accent gradient, ink and gold bars at the left, name in condensed 800 | the same object is the sting, the bug, the desk front and the end card |\n| Rundown | left: date block (big ",
+    "palette": [
+      "#121417",
+      "#1B1E23",
+      "#22262C",
+      "#F2CF1D",
+      "#F8DE4A",
+      "#D8B30C",
+      "#D4B064",
+      "#F4F1E8"
+    ],
+    "category": "Edit & Documentary",
+    "categoryCn": "剪辑与纪实",
+    "nameCn": "电视新闻包装",
+    "uses": [
+      "News round-ups",
+      "Bulletins",
+      "Market updates"
+    ]
+  },
+  {
+    "id": "newsreel",
+    "name": "1920s Newsreel",
+    "source": "builtin",
+    "sourceUrl": "https://github.com/lemomo-ai/lemo-opuscar",
+    "prompt": "A sound newsreel of the late 1920s, cut from real archive material: a searchlight-and-globe ident with a brass fanfare, a newspaper that spins into the lens, a fast and cheerful announcer on an optical soundtrack, place-and-date cards, maps, magazine pages and documents, wipes, flips and irises, and a hot band that can stop dead for the punchline.\nReferences (grammar only): **Fox Movietone News** and **Universal Newspaper Newsreel** (1927–1930s) — the ident ritual, the announcer's patter, one story per location, the stinger after the last story; **Pathé News** — the item title card; Hollywood's **spinning newspaper** montage; **1920s hot dance bands** (Charleston rhythm, banjo, tuba). Never copy a real newsreel's name, logo, globe design, typeface or fanfare.",
+    "notes": {
+      "camera": "- **Gate**: 1480 × 1080 inside 1920 × 1080 (1.37:1), corner radius 26 px, pure black outside. Nothing is ever drawn outside the gate.\n- **Two layers**: the picture layer (footage, print, maps, cards) gets the film look; the type layer (place cards, labels, subtitles, the record inset) stays sharp and steady. Grease-pencil marks belong to the picture (they weave with it).\n- **Base grade** for every",
+      "pacing": "- **The band is the clock**: pick a hot-dance tempo (190–220 BPM); every cut, landing, slam and label entrance sits on a beat, most cuts on bar lines; quick inserts on beat 3 or on the Charleston accent (beat 1 and the \"and\" of 2). When a period record plays, cut on the record's own beat (measure it), not on the grid.\n- **One story = one place + one kind of material + one line of voice.** Stories ",
+      "type": "| Use | Face (all OFL) | Spec |\n|---|---|---|\n| Ident, item cards, end title | Limelight | 104–118 px, silver gradient, black outline |\n| Chinese display (ident, cards, end title) | Noto Serif SC 900 | 50–76 px, letter-spacing 10–26 px, `#ece7dc` |\n| Place card, labels (English) | Oswald 600 | 26–34 px, letter-spacing 4–6 px, upper case \"PLACE · DATE\" |\n| Place card, labels (Chinese) | Noto Sans S",
+      "color": "- **Gate**: 1480 × 1080 inside 1920 × 1080 (1.37:1), corner radius 26 px, pure black outside. Nothing is ever drawn outside the gate.\n- **Two layers**: the picture layer (footage, print, maps, cards) gets the film look; the type layer (place cards, labels, subtitles, the record inset) stays sharp and steady. Grease-pencil marks belong to the picture (they weave with it).\n- **Base grade** for every",
+      "captions": "| Subtitles | Noto Sans SC 600 40 px over Oswald 400 29 px | bottom of the gate (baselines H−82 / H−38), black stroke 8 / 6 px |\n- **Subtitle strip**: the subtitles sit on a dark strip across the bottom of the gate (180 px, transparent at the top edge, ≈ 93–96 % `#0a0908` below), on every shot, fading in 0.25 s before the first cue of a run and held through gaps under 1 s, so it never blinks; prin",
+      "transitions": "- **The band is the clock**: pick a hot-dance tempo (190–220 BPM); every cut, landing, slam and label entrance sits on a beat, most cuts on bar lines; quick inserts on beat 3 or on the Charleston accent (beat 1 and the \"and\" of 2). When a period record plays, cut on the record's own beat (measure it), not on the grid.\n- **Transitions are the newsreel's own, each used once, as punctuation**: iris c"
+    },
+    "createdAt": "2026-10-29T00:00:00Z",
+    "engine": "remotion",
+    "previewUrl": "/style-previews/newsreel.jpg",
+    "previewVideoUrl": "/style-previews/newsreel.mp4",
+    "template": null,
+    "build": "- **Gate**: 1480 × 1080 inside 1920 × 1080 (1.37:1), corner radius 26 px, pure black outside. Nothing is ever drawn outside the gate.\n- **Two layers**: the picture layer (footage, print, maps, cards) gets the film look; the type layer (place cards, labels, subtitles, the record inset) stays sharp and steady. Grease-pencil marks belong to the picture (they weave with it).\n- **Base grade** for every source, before anything else (`tools/prep.py`, `grade()`): greyscale → percentile stretch (0.6 % → black, 99.6 % → white; print: 0.2–0.3 % / 99.0–99.7 % with the black lifted to 26–30, like newsprint",
+    "palette": [
+      "#EFE7D6",
+      "#17140F",
+      "#F3EEE4",
+      "#D6CFC0",
+      "#D9D4CA",
+      "#9E978A",
+      "#EFEBE2",
+      "#ECE7DC"
+    ],
+    "category": "Edit & Documentary",
+    "categoryCn": "剪辑与纪实",
+    "nameCn": "1920s 新闻影片",
+    "uses": [
+      "History stories",
+      "Fads & eras",
+      "Anniversaries"
+    ]
+  },
+  {
+    "id": "one-line",
+    "name": "One-line Drawing",
+    "source": "builtin",
+    "sourceUrl": "https://github.com/lemomo-ai/lemo-opuscar",
+    "prompt": "A single ink line that never leaves the paper. Everything on screen is that one line being drawn; scenes don't cut, they morph.\nReferences (grammar only): Osvaldo Cavandoli's *La Linea* (1971) — one line is both the world and the character, and transformations of the line are the jokes and the transitions; Gjon Mili's 1949 photographs of Picasso drawing with light — the confidence and speed of a single gesture; Norman McLaren's *Begone Dull Care* and *Boogie-Doodle* — lines drawn *to* the music. Do not copy La Linea's character, its gibberish voice, or any specific continuous-line illustration.",
+    "notes": {
+      "camera": "- **Paper**: warm white (around `#F4EFE4`), procedural mottling (soft-light, large tile), long fibres that fade out when zoomed out (or they shimmer), a sparse paper-tooth speckle over the ink at close zoom, light vignette. All textures anchored to the paper; they move with the camera.\n- **Ink** is a filled polygon around the path (not `ctx.stroke`), mixed with paper colour to an opaque tone per p",
+      "pacing": "- **Everything on ones** (24 fps): the appeal is the continuous act of drawing; stepping breaks it.\n- **Timing = chapter windows + curvature**: within a window, time per point is weighted by `1 + K·turn` (sharp turns get more time, smoothed so speed never jumps). Pin musical beats with marks: by arc-length fraction or by position (\"the second time the pen passes here\"). A stop is two marks at the ",
+      "type": "- **Text is written, like the line**: a handwriting face (e.g. Caveat) for subtitles, ink at ~84 %, no box, centred near the bottom, **written on** left to right (~0.2 s + ~17 ms per character) behind a soft paper-coloured halo so passing lines never cross the letters; fade out ~0.45 s. Hold ≥ max(1.8 s, speech + 0.6 s).\n- Titles in a monoline connected script (e.g. Sacramento: itself a one-line d",
+      "color": "- **Paper**: warm white (around `#F4EFE4`), procedural mottling (soft-light, large tile), long fibres that fade out when zoomed out (or they shimmer), a sparse paper-tooth speckle over the ink at close zoom, light vignette. All textures anchored to the paper; they move with the camera.\n- **Ink** is a filled polygon around the path (not `ctx.stroke`), mixed with paper colour to an opaque tone per p",
+      "captions": "- **Text is written, like the line**: a handwriting face (e.g. Caveat) for subtitles, ink at ~84 %, no box, centred near the bottom, **written on** left to right (~0.2 s + ~17 ms per character) behind a soft paper-coloured halo so passing lines never cross the letters; fade out ~0.45 s. Hold ≥ max(1.8 s, speech + 0.6 s).",
+      "transitions": "- **Everything on ones** (24 fps): the appeal is the continuous act of drawing; stepping breaks it.\n- **Timing = chapter windows + curvature**: within a window, time per point is weighted by `1 + K·turn` (sharp turns get more time, smoothed so speed never jumps). Pin musical beats with marks: by arc"
+    },
+    "createdAt": "2026-10-29T00:00:00Z",
+    "engine": "remotion",
+    "previewUrl": "/style-previews/one-line.jpg",
+    "previewVideoUrl": "/style-previews/one-line.mp4",
+    "template": null,
+    "build": "- **Paper**: warm white (around `#F4EFE4`), procedural mottling (soft-light, large tile), long fibres that fade out when zoomed out (or they shimmer), a sparse paper-tooth speckle over the ink at close zoom, light vignette. All textures anchored to the paper; they move with the camera.\n- **Ink** is a filled polygon around the path (not `ctx.stroke`), mixed with paper colour to an opaque tone per point.\n  - Width = base width of the current \"voice\" of the line × pen pressure × fine noise (±8 %); pressure from speed: `0.66 + 0.8·exp(−v/300)` (fast = thin, slow = fat).\n  - The line's character ca",
+    "palette": [
+      "#F4EFE4",
+      "#1D1A17"
+    ],
+    "category": "Hand-drawn & Painting",
+    "categoryCn": "手绘与绘画",
+    "nameCn": "一笔画",
+    "uses": [
+      "Brand stories",
+      "Life milestones",
+      "Minimal ads"
+    ]
+  },
+  {
+    "id": "papercut-red",
+    "name": "Red Paper-cut",
+    "source": "builtin",
+    "sourceUrl": "https://github.com/lemomo-ai/lemo-opuscar",
+    "prompt": "Chinese window-flower paper-cuts brought to life: jointed red cut-outs on paper grounds, where the cut *is* the drawing and the holes are where the light gets in.\nReferences (grammar only): folk window flowers of Shaanxi and Yuxian (sawtooth, crescent, cloud and swirl cuts, fold-symmetric rosettes, *yin* and *yang* cutting); the 1958–59 Shanghai Animation Film Studio cut-paper shorts (jointed figures, profile acting, paper layers in parallax). Copy no studio character, no named artist's work and no real motif sheet: generate every pattern from code, and never name the references in the film.",
+    "notes": {
+      "camera": "- **Paper grain:** a neutral-grey texture in `soft-light` inside each piece (dye mottling, fibres, specks), then the piece's alpha restored with `destination-in`, so holes stay holes.\n- **Cut edge:** every silhouette is a polyline with a slight low-frequency wobble (hand-cut), a 1 px light rim upper-left and a dark rim lower-right (the cut face). Architecture and machines use straight segments + w",
+      "pacing": "- **Characters step at 12 fps** (pose sampled at `floor(t·12)/12`); **camera, light, weather, flames and flying pieces move on ones** at 24 fps.\n- Rigs pin pieces at rivets (neck, shoulders, elbows, hips, knees, jaws, tails). Hard poses, tiny eases, 1-frame overshoots (\"pop\" = 1.15× for one step). Weight comes from **size and camera shake**.\n- In profile, a raised near arm crosses the face: keep h",
+      "type": "- **Subtitles are a paper strip in the world**, e.g. a red banner (横批) darker than the picture's reds so cream text holds, serrated edges, swallow-tail ends; a sturdy OFL serif (e.g. Fraunces SemiBold) around 44 px, low, with a paper shadow. It drops in on two 12 fps steps, like a couplet being pasted. Hold ≥ max(1.8 s, speech + 0.7 s); never overlap.\n- **Titles** are cut-out letters (*yang*-cut, ",
+      "color": "- **Paper grain:** a neutral-grey texture in `soft-light` inside each piece (dye mottling, fibres, specks), then the piece's alpha restored with `destination-in`, so holes stay holes.\n- **Cut edge:** every silhouette is a polyline with a slight low-frequency wobble (hand-cut), a 1 px light rim upper-left and a dark rim lower-right (the cut face). Architecture and machines use straight segments + w",
+      "captions": "- **Subtitles are a paper strip in the world**, e.g. a red banner (横批) darker than the picture's reds so cream text holds, serrated edges, swallow-tail ends; a sturdy OFL serif (e.g. Fraunces SemiBold) around 44 px, low, with a paper shadow. It drops in on two 12 fps steps, like a couplet being pasted. Hold ≥ max(1.8 s, speech + 0.7 s); never overlap.",
+      "transitions": "- **Cutting:** the pattern is revealed through a mask of circles along the scissor path; the offcut drops once the outer edge is passed; blades open and close on a subdivision of the beat; scraps flutter out and land.\n- **Unfolding:** successive unfolds a fraction of a second apart, each flap swinging from folded to flat with ease-out (the \"pa!\" snap), then a scale bump and warm flash on the accen"
+    },
+    "createdAt": "2026-10-29T00:00:00Z",
+    "engine": "hyperframes",
+    "template": null,
+    "build": "- **Paper grain:** a neutral-grey texture in `soft-light` inside each piece (dye mottling, fibres, specks), then the piece's alpha restored with `destination-in`, so holes stay holes.\n- **Cut edge:** every silhouette is a polyline with a slight low-frequency wobble (hand-cut), a 1 px light rim upper-left and a dark rim lower-right (the cut face). Architecture and machines use straight segments + wobble, never smoothing.\n- **Paper thickness:** each piece casts a tight soft shadow on the layer below; stacked folded paper shows 2–6 offset darker edges.\n- **Figures: red block + yin lines.** Every ",
+    "palette": [
+      "#D2201F",
+      "#C8102E",
+      "#D7261E"
+    ],
+    "category": "East Asian Traditions",
+    "categoryCn": "东方传统",
+    "nameCn": "红色窗花剪纸",
+    "uses": [
+      "Lunar New Year",
+      "Festive greetings",
+      "Folk tales"
+    ],
+    "previewUrl": "/style-previews/papercut-red.jpg",
+    "previewVideoUrl": "/style-previews/papercut-red.mp4"
+  },
+  {
+    "id": "satellite-briefing",
+    "name": "Satellite Briefing",
+    "source": "builtin",
+    "sourceUrl": "https://github.com/lemomo-ai/lemo-opuscar",
+    "prompt": "Real satellite imagery of a real place, graded down to an analyst's grey, with thin white measurement lines drawn on the ground: a lock-on reticle, outlines, a range line, one reading. One continuous zoom built from stacked imagery plates carries the viewer from orbit to the ground and back, and time can run inside one locked frame.\nReferences (grammar only): open-source investigation films that annotate satellite pictures (thin lines on imagery, one claim per screen, measuring as the plot); the Eameses' *Powers of Ten* (one continuous change of scale with a readout); NASA Earth Observatory's *World of Change* (one place, time running). Copy none of their layouts, typefaces, icons or music; never name them in the film.",
+    "notes": {
+      "camera": "- **Plates**: georeferenced rasters with a lon/lat box, sampled in a shader where the camera ray hits the ground, nested by resolution (world → region → detail) with feathered edges so finer plates dissolve in as the camera descends.\n- **Globe**: ray–sphere from a perspective camera, a thin atmosphere rim, limb shading at orbit only; compute |C|² − R² in double precision (float32 fails below a few",
+      "pacing": "- The camera never stops: distance interpolates in log space, segments ease, holds keep a 2–5 % creep or a slow rotation. No frozen frame longer than a second.\n- Marks arrive by being made: a line grows, an outline prints behind the scan, a counter rolls and lands with a small pop, a reticle snaps with overshoot.\n- Time changes are scans, never dissolves; their spacing tells the speed, and the cam",
+      "type": "- **Roles**: a light condensed grotesk for the reading (96–130 px, e.g. Barlow Condensed); a monospace for instruments and dates (20–34 px, e.g. IBM Plex Mono); a sans for labels in the film's language (24–42 px); a serif only for the claim layer and the title. OFL, self-hosted, CJK subset to the characters used.\n- **Labels attach to the ground** with a leader line. The reading sits in the right t",
+      "color": "- **Plates**: georeferenced rasters with a lon/lat box, sampled in a shader where the camera ray hits the ground, nested by resolution (world → region → detail) with feathered edges so finer plates dissolve in as the camera descends.\n- **Globe**: ray–sphere from a perspective camera, a thin atmosphere rim, limb shading at orbit only; compute |C|² − R² in double precision (float32 fails below a few",
+      "captions": "- **Subtitles are a transcript strip** at the bottom left: a 2 px white rule, a dark plate fading right, left-aligned, each line on one line (measure with the real font, `nowrap`; split a long sentence into two cues). If the film is bilingual, the film's language on top.\n- Hold subtitles ≥ max(1.8 s, speech + 0.6 s); a rolling counter reports its landing value; labels stay ≥ characters ÷ 4.5 + 1.5",
+      "transitions": "- Marks arrive by being made: a line grows, an outline prints behind the scan, a counter rolls and lands with a small pop, a reticle snaps with overshoot.\n- Time changes are scans, never dissolves; their spacing tells the speed, and the camera moves with them (accelerating as the steps shorten, braking on the last)."
+    },
+    "createdAt": "2026-10-29T00:00:00Z",
+    "engine": "remotion",
+    "previewUrl": "/style-previews/satellite-briefing.jpg",
+    "previewVideoUrl": "/style-previews/satellite-briefing.mp4",
+    "template": {
+      "sha256": "05381dfac034e3c80fc463b7c07f32fd47d90c6f3b1eea475c0208effd83b187",
+      "size": 10554,
+      "version": 1
+    },
+    "build": "- **Plates**: georeferenced rasters with a lon/lat box, sampled in a shader where the camera ray hits the ground, nested by resolution (world → region → detail) with feathered edges so finer plates dissolve in as the camera descends.\n- **Globe**: ray–sphere from a perspective camera, a thin atmosphere rim, limb shading at orbit only; compute |C|² − R² in double precision (float32 fails below a few tens of km).\n- **Time**: dated plates share one grid. A soft scan front (a satellite pass, never a hairline) swaps them: north → south forward, south → north for a rewind. Growth can run outward from",
+    "palette": [
+      "#070B0E",
+      "#A1A7A9",
+      "#F2F5F6",
+      "#FFBE55"
+    ],
+    "category": "Evidence Films",
+    "categoryCn": "实证影像",
+    "nameCn": "卫星简报",
+    "uses": [
+      "Climate",
+      "News explainers",
+      "Geography"
+    ]
+  },
+  {
+    "id": "shadow-puppet",
+    "name": "Shadow Puppetry",
+    "source": "builtin",
+    "sourceUrl": "https://github.com/lemomo-ai/lemo-opuscar",
+    "prompt": "Chinese shadow theatre: translucent dyed-hide puppets, carved like lace, pressed against a cotton screen and lit from behind by oil lamps.\nReferences (grammar only): Lotte Reiniger's *The Adventures of Prince Achmed* (1926) for profile acting and lace-like scenery; Shaanxi / Huayin shadow theatre for carving, colour and gong-and-drum rhythm. Never reproduce a specific historical puppet, melody or recording, and never name them in the film.",
+    "notes": {
+      "camera": "**Rendering model.** Per pixel: `image = tonemap( lampLight × hideTransmission × clothTexture )`.\n- `hideTransmission`: a 2D canvas that starts **white**; every piece is drawn with `multiply`. Holes stay white, overlaps darken by themselves.\n- `lampLight`: per lamp a broad lobe plus a tight hotspot (~6 : 1), each flickering independently (a few % of ~7 Hz value noise plus a faster sine). Warm ligh",
+      "pacing": "- **24 fps continuous** for puppets and camera; only swapped effect pieces (fire, water) step at 12 fps.\n- **Hand tremor** on every puppet (a few px, ~0.02 rad, low-frequency), stronger under tension.\n- Body glides with the main rod; **legs, plumes, tassels are simulated** (damped pendulums / spring chains driven by body acceleration, pre-simulated at a fixed rate for determinism).\n- Operatic phra",
+      "type": "- Subtitles belong to the theatre: a **storyteller's placard** (narrow dark-lacquer board, thin gold line, small carved seal), a label on a rod, or letters carved into hide. Classical OFL serif (e.g. Cormorant Garamond 600), 40–50 px, cream on dark, short slide in. Hold ≥ max(1.8 s, speech + 0.6 s).\n- **Titles are puppets**: dark hide plaques with letters cut out (`fillText` + `destination-out`, s",
+      "color": "**Rendering model.** Per pixel: `image = tonemap( lampLight × hideTransmission × clothTexture )`.\n- `hideTransmission`: a 2D canvas that starts **white**; every piece is drawn with `multiply`. Holes stay white, overlaps darken by themselves.\n- `lampLight`: per lamp a broad lobe plus a tight hotspot (~6 : 1), each flickering independently (a few % of ~7 Hz value noise plus a faster sine). Warm ligh",
+      "captions": "- Subtitles belong to the theatre: a **storyteller's placard** (narrow dark-lacquer board, thin gold line, small carved seal), a label on a rod, or letters carved into hide. Classical OFL serif (e.g. Cormorant Garamond 600), 40–50 px, cream on dark, short slide in. Hold ≥ max(1.8 s, speech + 0.6 s).\n- **Titles are puppets**: dark hide plaques with letters cut out (`fillText` + `destination-out`, s",
+      "transitions": "- **Press on / lift off**: arrivals come large and blurred onto the cloth and snap sharp (~0.5 s); exits grow, blur and fade (~1 s)."
+    },
+    "createdAt": "2026-10-29T00:00:00Z",
+    "engine": "hyperframes",
+    "template": null,
+    "build": "**Rendering model.** Per pixel: `image = tonemap( lampLight × hideTransmission × clothTexture )`.\n- `hideTransmission`: a 2D canvas that starts **white**; every piece is drawn with `multiply`. Holes stay white, overlaps darken by themselves.\n- `lampLight`: per lamp a broad lobe plus a tight hotspot (~6 : 1), each flickering independently (a few % of ~7 Hz value noise plus a faster sine). Warm light, never white.\n- `tonemap = 1 − exp(−hdr)`, exposure ∝ `1/√(lamps lit)`: more lamps bleach the frame but keep it readable. Lamp count is a dial the story can turn.\n- **Cloth**: procedural weave (sin ",
+    "palette": [
+      "#0C0705",
+      "#FFB05A",
+      "#B8211A",
+      "#8E1813",
+      "#D9541C",
+      "#DC9D1E",
+      "#C98A26",
+      "#236E3A"
+    ],
+    "category": "East Asian Traditions",
+    "categoryCn": "东方传统",
+    "nameCn": "皮影戏",
+    "uses": [
+      "Myths & folklore",
+      "Heritage",
+      "Festivals"
+    ],
+    "previewUrl": "/style-previews/shadow-puppet.jpg",
+    "previewVideoUrl": "/style-previews/shadow-puppet.mp4"
+  },
+  {
+    "id": "swiss-motion",
+    "name": "Swiss Motion Graphics",
+    "source": "builtin",
+    "sourceUrl": "https://github.com/lemomo-ai/lemo-opuscar",
+    "prompt": "International Typographic Style in motion: a modular grid, one typeface, one signal colour, and movement as exact as a printing press.\nReferences (grammar only): 1950s–70s Zurich posters (Müller-Brockmann, Hofmann, Gerstner, Crouwel) for the grid, flush-left type, scale contrast and \"designing programmes\"; modern identity systems in motion (Experimental Jetset, Pentagram) for snaps on the beat. Never copy a specific historical poster's composition (no concentric-circle or fan layouts lifted from Müller-Brockmann), never use Helvetica or Akzidenz font files, never name a real institution on a poster.",
+    "notes": {
+      "camera": "- **Frame grid**: 1920×1080, 12 columns, ~96 px side margins, 24 px gutters, 24 px baseline. The frame can act as a **spread**: a left page (the programme: numeral, rule text, notes) and a right page (the artifact).\n- **Artifact grid** derived from the content (Gerstner): what the columns and rows *mean* is a design decision. **Choose module sizes that give the elements mass**; too many thin colum",
+      "pacing": "- **Two curves only**: a precise ease `cubic-bezier(.7,0,.2,1)` for snaps; linear for lines being drawn, playheads and the exception. No overshoot, no spring, no bounce.\n- **Durations are note values** at the film's tempo. A snap starts one note value early and **lands on the beat**.\n- **Entrances are wipes or clip-reveals, never fades**: words rise out of a clip rect from below the baseline and l",
+      "type": "- **One family for the whole film**, an OFL neo-grotesque (Archivo, Inter, Schibsted Grotesk, Instrument Sans…), several weights. Letter-spacing ~−2 % at ≥ 90 px. Headlines can be lowercase. Load every weight with `document.fonts.load` before drawing.\n- **Flush left, ragged right**; everything on a grid line; big white space is part of the layout. Giant numerals are **optically** flush left (subtr",
+      "color": "- **Frame grid**: 1920×1080, 12 columns, ~96 px side margins, 24 px gutters, 24 px baseline. The frame can act as a **spread**: a left page (the programme: numeral, rule text, notes) and a right page (the artifact).\n- **Artifact grid** derived from the content (Gerstner): what the columns and rows *mean* is a design decision. **Choose module sizes that give the elements mass**; too many thin colum",
+      "captions": "- **Subtitles are part of the layout**, not a bar at the bottom: each line sits at a column start in the current composition (a small grey lead-in + a large bold statement, or a caption like a museum label), each word clip-revealed on its whisper timestamp. Hold ≥ max(1.8 s, speech + 0.6 s); assert it in code.\n- **Caption rows**: small (~19 px) medium-weight notes with a 1 px rule above; technical",
+      "transitions": "- **Two curves only**: a precise ease `cubic-bezier(.7,0,.2,1)` for snaps; linear for lines being drawn, playheads and the exception. No overshoot, no spring, no bounce.\n- **Durations are note values** at the film's tempo. A snap starts one note value early and **lands on the beat**.\n- **Entrances are wipes or clip-reveals, never fades**: words rise out of a clip rect from below the baseline and l"
+    },
+    "createdAt": "2026-10-29T00:00:00Z",
+    "engine": "remotion",
+    "template": {
+      "sha256": "d62a734d98bb22cd1a3c93aba55a281be4568650ff114aaeb36ce3f38d16ba10",
+      "size": 9562,
+      "version": 1
+    },
+    "build": "- **Frame grid**: 1920×1080, 12 columns, ~96 px side margins, 24 px gutters, 24 px baseline. The frame can act as a **spread**: a left page (the programme: numeral, rule text, notes) and a right page (the artifact).\n- **Artifact grid** derived from the content (Gerstner): what the columns and rows *mean* is a design decision. **Choose module sizes that give the elements mass**; too many thin columns make a layout look like a chart.\n- **Surfaces**: page, paper, ink, signal colour, grid lines in two or three light greys (on page, while building, on paper). No gradients, no shadows, no particles,",
+    "palette": [
+      "#EAE9E5",
+      "#FFFFFF",
+      "#111111",
+      "#E30613",
+      "#F2F0EA",
+      "#141414",
+      "#FF5A00",
+      "#E9ECEF"
+    ],
+    "category": "Graphic & Type",
+    "categoryCn": "图形与排版",
+    "nameCn": "瑞士动态排版",
+    "uses": [
+      "Brand identity",
+      "Events",
+      "Design education"
+    ],
+    "previewUrl": "/style-previews/swiss-motion.jpg",
+    "previewVideoUrl": "/style-previews/swiss-motion.mp4"
+  },
+  {
+    "id": "telestrator",
+    "name": "Sports Telestrator",
+    "source": "builtin",
+    "sourceUrl": "https://github.com/lemomo-ai/lemo-opuscar",
+    "prompt": "The TV football analysis segment: play the clip at full speed, rewind, freeze it, and draw on the broadcast picture — rings under players' feet, marker arrows for the ball, a red patch for the space nobody covered — then play on, switch angles, count the frames, and flatten the pitch into a board. Real match footage is the ground; every line is drawn on top of it and moves with it. A studio show's packaging (sting, corner bug, score bar, a yellow wipe) holds it together. 16:9.\nReferences (grammar only): touch-screen analysis segments in televised football (the \"telestrator\" pundit's board), and explainer channels that annotate real match footage. Never copy a broadcaster's or channel's logo, fonts, colours, idents or graphics, and never name them in the film.",
+    "notes": {
+      "camera": "- **Full-frame footage** most of the time. The packaging lives in the corners:\n  - **Corner bug**, top right (x 1452–1880, y 38–110): show name on a yellow block + a mode line in the mode's colour — LIVE (red dot) / ANALYSIS (yellow) / REPLAY (cyan). It is in every footage frame from frame 1, because it sits over the broadcaster's logo.\n  - **Score bar**, bottom right (x 1392–1880, y 926–996): HOM",
+      "pacing": "- **Order inside one piece of action:** live at 1× (original sound) → rewind (0.6 s, reversed with tracking bars and ◀◀) → freeze ① → slow play (0.6–0.85×, frame-blended) → freeze ② → slow play with a stopwatch → freeze ③ → ball flight with a comet trail → another angle (replay), possibly one more freeze.\n- **Lighter variants** for secondary pieces of action, so the deep breakdown stays special:\n ",
+      "type": "- Labels: Noto Sans SC 900, 40 px (30 px for a name), English line Barlow Condensed 600, 21 px, letter-spacing 2 px, in the role colour.\n- Packaging numbers (score, minute, stopwatch, big data): Barlow Condensed 800 Italic.\n- Clock / frame numbers: IBM Plex Mono 500, 24 px.\n- Board pages: title Noto Sans SC 900 60–64 px, rows Noto Sans SC 700 34–42 px with a grey note under each, numbers Barlow Co",
+      "color": "| Role | Colour |\n|---|---|\n| The team/player we follow, the ball, main marker lines | `#FFD400` fluorescent yellow |\n| Opponents (rings, block arrows, link lines) | `#3FD8FF` cyan |\n| Space (a patch nobody covers) | `#FF3B30` red, fill 0.34–0.38 + dashed edge |\n| Pitch lines traced, neutral marks, stamps | `#F4F1E8` chalk |\n| Show board | `#0C1411` ink green-black |\n| Label / bug background | `rg",
+      "captions": "- Subtitles: Chinese line (Noto Sans SC 500, 38 px) above an English line (Barlow Condensed 600, 32 px), black bar 0.64 with a 4 px yellow edge; one line per language, never wrapped — shorten the line instead of shrinking it.",
+      "transitions": "- **Cuts between segments**: only the packaging wipe — a yellow slanted band with dark edges crossing the frame in 0.34 s. Inside a segment, hard cuts. No dissolves, no page turns.\n- **Comparison frames** (the shot map, the data card) are fully drawn early and held ≥ 2.5 s before the next cut."
+    },
+    "createdAt": "2026-10-29T00:00:00Z",
+    "engine": "remotion",
+    "previewUrl": "/style-previews/telestrator.jpg",
+    "previewVideoUrl": "/style-previews/telestrator.mp4",
+    "template": null,
+    "build": "1. **Freeze and draw** — a freeze segment = one source frame + flash + punch + desaturate + spotlight; overlays drawn by progress (`overlayAnalysis()`, `overlayG1()` in `demo/index.html`).\n2. **Tracked ring** — hand keyframes of the feet point in source pixels every ~3–6 frames, linearly interpolated (`TRK`, `at()`); check them with `?dbg=1`, which paints every tracked point in magenta.\n3. **Frame-counting stopwatch** — starts at the receiving frame and counts source frames ÷ fps; stops and turns yellow on the strike (`stopwatch()`).\n4. **Score-bar flip on the goal frame**, one entry per goal ",
+    "palette": [
+      "#0C1411",
+      "#FFD400",
+      "#3FD8FF",
+      "#FF3B30",
+      "#F4F1E8",
+      "#080C0E"
+    ],
+    "category": "Edit & Documentary",
+    "categoryCn": "剪辑与纪实",
+    "nameCn": "体育战术板",
+    "uses": [
+      "Sports analysis",
+      "Match recaps",
+      "Coaching"
+    ]
+  },
+  {
+    "id": "transit-map",
+    "name": "Transit Map",
+    "source": "builtin",
+    "sourceUrl": "https://github.com/lemomo-ai/lemo-opuscar",
+    "prompt": "A metro schematic printed on a physical sheet: lines held to eight directions, white stops, black-outlined interchange capsules, water as a flat blue band. The network is drawn on by glowing pen tips while a real perspective camera moves over the paper: it rides a tip, drops low where a line dives under water, pulls back through levels of detail and sweeps across the densest knot at a low angle with a shallow focus.\nReferences (grammar only): the octilinear schematic tradition of metro diagrams (Beck's Underground diagram, Vignelli's New York map), the stamp of a printed cartouche, flatbed and macro photography of maps lying on a table. Copy none of their layouts, typefaces, icons or line bullets; never name them in the film.",
+    "notes": {
+      "camera": "**The unit is the grid step, G.** Every coordinate and size on the sheet is given in G. Named stations sit on a 0.1 G lattice and at least 0.7 G apart along a line; a city network spans about 30 × 30 G and the sheet adds margins for the cartouche and any printed panel (about 45 × 47 G in our demo). The camera's zoom is read in screen pixels per G at the focus point (1080p).\n\n| Mark | Geometry (G) ",
+      "pacing": "- 30 fps. Pen tips move on monotone keyframes; a tip may slow on a station and accelerate between them, never stop dead mid-segment.\n- Stops pop from 0.6× with a small overshoot in about 0.28 s and a ring in the line colour that spreads from 0.10 to 0.42 G and fades in 0.6 s. Minor stops pop the same way at a smaller size.\n- Interchanges scale down from 2× in 0.22 s with an ink ring spreading to 0",
+      "type": "- **Faces**: a neutral grotesk for Latin and figures (Inter in the demo) and a CJK sans of matching weight (Noto Sans SC, subset to the characters used). OFL, self-hosted. Native language above, second language below, one line each, never wrapped.\n- **Sizes on the sheet**, in G (native / second language): hub label 0.30 / 0.17 bold; interchange 0.23 / 0.14 semibold; named stop 0.20 / 0.14 semibold",
+      "color": "**The unit is the grid step, G.** Every coordinate and size on the sheet is given in G. Named stations sit on a 0.1 G lattice and at least 0.7 G apart along a line; a city network spans about 30 × 30 G and the sheet adds margins for the cartouche and any printed panel (about 45 × 47 G in our demo). The camera's zoom is read in screen pixels per G at the focus point (1080p).\n\n| Mark | Geometry (G) ",
+      "captions": "- **The film's title is printed on the map.** At the start the title appears in the map's world: the cartouche (the map's name is the film's title), a line bullet, a station name plate by the lens, or a printed callout. Never a card or caption floating over the picture. It is bilingual like every printed text (native line above, second line below, one line each) and is held for its reading time wh",
+      "transitions": "- 30 fps. Pen tips move on monotone keyframes; a tip may slow on a station and accelerate between them, never stop dead mid-segment.\n- Stops pop from 0.6× with a small overshoot in about 0.28 s and a ring in the line colour that spreads from 0.10 to 0.42 G and fades in 0.6 s. Minor stops pop the sam"
+    },
+    "createdAt": "2026-10-29T00:00:00Z",
+    "engine": "hyperframes",
+    "template": null,
+    "build": "**The unit is the grid step, G.** Every coordinate and size on the sheet is given in G. Named stations sit on a 0.1 G lattice and at least 0.7 G apart along a line; a city network spans about 30 × 30 G and the sheet adds margins for the cartouche and any printed panel (about 45 × 47 G in our demo). The camera's zoom is read in screen pixels per G at the focus point (1080p).\n\n| Mark | Geometry (G) |\n|---|---|\n| Line | 0.15 wide, round caps; corner fillet radius 0.34 |\n| Thin line (a second rail mode; ferry thread) | 0.07 wide; fillet 0.30 |\n| Parallel lines sharing a corridor | each offset ±0.1",
+    "palette": [
+      "#1B1918",
+      "#F2EEE5",
+      "#1B1C1E",
+      "#4A4740",
+      "#BCD6EA",
+      "#8FB5D6",
+      "#5F88AD",
+      "#E3002B"
+    ],
+    "category": "Information & Keynote",
+    "categoryCn": "信息与发布",
+    "nameCn": "地铁线路图",
+    "uses": [
+      "Transport",
+      "Growth over time",
+      "Networks"
+    ],
+    "previewUrl": "/style-previews/transit-map.jpg",
+    "previewVideoUrl": "/style-previews/transit-map.mp4"
+  },
+  {
+    "id": "urban-sketch",
+    "name": "Urban Sketch · Pen & Wash",
+    "source": "builtin",
+    "sourceUrl": "https://github.com/lemomo-ai/lemo-opuscar",
+    "prompt": "A sketchbook page drawn on location: fine sepia fineliner lines that wobble, overshoot and never quite close, with loose transparent watercolour dropped on top. The colour sits slightly off the lines, spills over them, and dissolves into cream cold-press paper at the page edge.\nReferences (grammar only):\n- Urban-sketching sketchbook pages: line first, then wash; colour off-register; handwritten date and place in the corner; the page edge breaking up into dabs.\n- *Paperman* (2012): a monochrome world with one coloured object.\n- *The Red Balloon* (1956): an object as the protagonist, the camera following it across a city.\n- Jazz waltz (the Vince Guaraldi school): 3/4 swing, walking bass, brushes, a woodwind lead.\nNothing is copied from these: no characters, melodies, layouts or type.",
+    "notes": {
+      "camera": "- **Paper**: two octaves of fbm mottling (a few %), a tooth tile multiplied over everything, figures included.\n- **Ink**: ~96 % coverage; world line width thinner far, thicker near (e.g. 1.3–3.4 px); wobble ~1 px; overshoot 3–8 px; a third to half of long strokes get one small gap. Strokes are baked with their **draw time per pixel**, so the shader plays back stroke order.\n- **Wash**: 2–3 rough-ed",
+      "pacing": "- **Figures boil at 12 fps** (line wobble and wash seeds change every 1/12 s). The static page does not boil (it is a real page); the camera moves every frame, smoothly.\n- **Performance**: anticipation, action, follow-through; footsteps on the beat.\n- **Invisible forces are drawn**: wind as ink curls that draw on and erase from the tail, trailing dabs; sound as ink lines; heat as wavy strokes.\n- *",
+      "type": "- **All text is handwriting on the page**, written on left to right with pen sound, and moves with the camera: a corner note (e.g. Reenie Beanie: day, time, weather, place), titles and colophon in a casual hand (e.g. Caveat 500–600), left-aligned in the blank margin.\n- **Subtitles**, if there is a voice: handwritten lines in the page margin or a caption strip written into the lower margin, never a",
+      "color": "- **Paper**: two octaves of fbm mottling (a few %), a tooth tile multiplied over everything, figures included.\n- **Ink**: ~96 % coverage; world line width thinner far, thicker near (e.g. 1.3–3.4 px); wobble ~1 px; overshoot 3–8 px; a third to half of long strokes get one small gap. Strokes are baked with their **draw time per pixel**, so the shader plays back stroke order.\n- **Wash**: 2–3 rough-ed",
+      "captions": "- **Subtitles**, if there is a voice: handwritten lines in the page margin or a caption strip written into the lower margin, never a generic overlay box. Hold ≥ max(1.8 s, speech + 0.6 s).",
+      "transitions": "- **Colour never snaps**: it blooms from a point or arrives through the field."
+    },
+    "createdAt": "2026-10-29T00:00:00Z",
+    "engine": "remotion",
+    "previewUrl": "/style-previews/urban-sketch.jpg",
+    "previewVideoUrl": "/style-previews/urban-sketch.mp4",
+    "template": null,
+    "build": "- **Paper**: two octaves of fbm mottling (a few %), a tooth tile multiplied over everything, figures included.\n- **Ink**: ~96 % coverage; world line width thinner far, thicker near (e.g. 1.3–3.4 px); wobble ~1 px; overshoot 3–8 px; a third to half of long strokes get one small gap. Strokes are baked with their **draw time per pixel**, so the shader plays back stroke order.\n- **Wash**: 2–3 rough-edged layers, multiply, alpha ~0.4–0.65, offset from the line by about one line width, a dried edge at 30–40 %; granulation = pigment × (0.82 + 0.36 · fbm).\n- **Colour arrival field**: every pixel has a",
+    "palette": [
+      "#C3C96F",
+      "#7FA04A",
+      "#9FBCD6",
+      "#D8C6A0",
+      "#7FA6B8",
+      "#C9573F",
+      "#C8A86B",
+      "#BCD0DC"
+    ],
+    "category": "Hand-drawn & Painting",
+    "categoryCn": "手绘与绘画",
+    "nameCn": "钢笔淡彩",
+    "uses": [
+      "City & travel",
+      "Architecture",
+      "Lifestyle brands"
+    ]
+  },
+  {
+    "id": "visual-investigation",
+    "name": "Visual Investigation",
+    "source": "builtin",
+    "sourceUrl": "https://github.com/lemomo-ai/lemo-opuscar",
+    "prompt": "A cold investigation desk: footage, photographs, documents, sound and maps from one real event, laid out on one shared clock so they check each other. The clock lives inside the picture — timestamps on the evidence, a playhead on a data chart, a stopwatch over the decisive seconds; frozen frames are circled and magnified; quotes are highlighted on the page they come from; a plan shows where cameras stood and where they looked; what is known and what is not are kept apart; at the end every piece of evidence is pulled into one map.\nReferences (grammar only): newspaper visual-investigation videos, forensic-architecture reconstructions, broadcast verification units. Never copy them, quote their names or use their branding.",
+    "notes": {
+      "camera": "- **Three kinds of source at least**: moving image (newsreel, CCTV, phone video, launch camera), documents (testimony, memo, telegram/teletype, report page), photographs. Add sound (original commentary, radio, recordings), data (weather, telemetry, counts) and maps whenever they exist.\n- **Documents**: a scanned page is shown as a strip or a page, never re-drawn; only the decisive line is highligh",
+      "pacing": "- 30 fps. Elements **cut in** (≤ 0.1 s opacity) with a 3–4-frame white flash, as if pulled from the evidence locker; nothing flies, bounces or scale-pops.\n- Only things that are *drawn* are progressive: circles drawn clockwise in 0.5 s (ease-out cubic), leaders and links 0.4–0.8 s, plans stroke by stroke, highlights wiped, typewriter text for telegrams.\n- Inside a frame: a slow push (≤ 1.9× on a m",
+      "type": "- Chinese headings and findings: Noto Sans SC 700 (30–124 px). Tags, timecodes and ticks: IBM Plex Mono 400/600. Quotes: Source Serif 4 Italic for the original wording, Noto Serif SC 500 for a translation underneath in the secondary colour (only when the subtitles don't already say it). All OFL, subset to the words on screen.\n- **Few words per frame.** Each frame keeps only what this beat needs: t",
+      "color": "- **Three kinds of source at least**: moving image (newsreel, CCTV, phone video, launch camera), documents (testimony, memo, telegram/teletype, report page), photographs. Add sound (original commentary, radio, recordings), data (weather, telemetry, counts) and maps whenever they exist.\n- **Documents**: a scanned page is shown as a strip or a page, never re-drawn; only the decisive line is highligh",
+      "captions": "- Chinese headings and findings: Noto Sans SC 700 (30–124 px). Tags, timecodes and ticks: IBM Plex Mono 400/600. Quotes: Source Serif 4 Italic for the original wording, Noto Serif SC 500 for a translation underneath in the secondary colour (only when the subtitles don't already say it). All OFL, subset to the words on screen.\n- **Few words per frame.** Each frame keeps only what this beat needs: t",
+      "transitions": "- 30 fps. Elements **cut in** (≤ 0.1 s opacity) with a 3–4-frame white flash, as if pulled from the evidence locker; nothing flies, bounces or scale-pops.\n- Only things that are *drawn* are progressive: circles drawn clockwise in 0.5 s (ease-out cubic), leaders and links 0.4–0.8 s, plans stroke by stroke, highlights wiped, typewriter text for telegrams.\n- Inside a frame: a slow push (≤ 1.9× on a m"
+    },
+    "createdAt": "2026-10-29T00:00:00Z",
+    "engine": "remotion",
+    "previewUrl": "/style-previews/visual-investigation.jpg",
+    "previewVideoUrl": "/style-previews/visual-investigation.mp4",
+    "template": null,
+    "build": "- **Three kinds of source at least**: moving image (newsreel, CCTV, phone video, launch camera), documents (testimony, memo, telegram/teletype, report page), photographs. Add sound (original commentary, radio, recordings), data (weather, telemetry, counts) and maps whenever they exist.\n- **Documents**: a scanned page is shown as a strip or a page, never re-drawn; only the decisive line is highlighted (red, `multiply`, α ≈ 0.6, wiped left to right). Text that exists only as a transcription (a report, radiograms) is re-typeset by code and labelled as a transcription.\n- **Archival picture pipelin",
+    "palette": [
+      "#0B0C0E",
+      "#141619",
+      "#2E3238",
+      "#ECEAE4",
+      "#8B9097",
+      "#4A4F57",
+      "#FF4A2E",
+      "#E4E0D4"
+    ],
+    "category": "Edit & Documentary",
+    "categoryCn": "剪辑与纪实",
+    "nameCn": "视觉调查",
+    "uses": [
+      "Reconstructions",
+      "Fact-checks",
+      "Incident reports"
+    ]
+  },
+  {
+    "id": "watercolor",
+    "name": "Watercolor Brush",
+    "source": "builtin",
+    "sourceUrl": "https://github.com/lemomo-ai/lemo-opuscar",
+    "prompt": "A hand-painted journal page that paints itself: translucent brush strokes with dry-brush flying white on warm cotton paper, hand-written notes beside what is painted, nothing drawn with a vector line.\nReferences (grammar only): naturalist field-journal and botanical-plate watercolours (specimen + note); long horizontal handscroll panoramas (one continuous painted world); the textbook \"transect\" diagram (a gradient read across space). Borrow the grammar, never a specific artwork, character or layout.",
+    "notes": {
+      "camera": "- **Paper**: a pre-generated image (warm base, three octaves of smooth noise ±3.5 %, a few thousand short curved fibres, fine grain, light vignette), drawn first every frame.\n- **Stroke** (`engine.js` `mk`/`drawS`): a ribbon whose width follows a profile (`brush`, `leaf`, `even`, `tip`, `trunk`) with ~±22 % value-noise roughness, filled as a thin wash (≈ 0.55–0.6 body opacity when bristles are pre",
+      "pacing": "- **Painting-in is the main motion**: an object's progress is a function of where it sits on screen or of a cue; strokes in a list each take a slice of that progress, so structure appears first.\n- **Sway** only after an object is finished: a small horizontal skew (`sin(1.15t+φ) + .4 sin(2.7t+2φ)`), ~0.006 for trees, 0.01–0.03 for grass.\n- **Brush-edge wipes**: a wavy vertical clip reveals a whole ",
+      "type": "- An elegant serif (e.g. Cormorant Garamond) for titles and subtitles, a handwriting face (e.g. Caveat) for notes, a small mono (e.g. IBM Plex Mono, wide tracking) for measured labels, Noto Serif SC for Chinese (subset to the characters used).\n- Hand notes are drawn twice over a paper-coloured halo, revealed left to right like writing, with a pen leader line that grows to its specimen.\n- **Subtitl",
+      "color": "- **Paper**: a pre-generated image (warm base, three octaves of smooth noise ±3.5 %, a few thousand short curved fibres, fine grain, light vignette), drawn first every frame.\n- **Stroke** (`engine.js` `mk`/`drawS`): a ribbon whose width follows a profile (`brush`, `leaf`, `even`, `tip`, `trunk`) with ~±22 % value-noise roughness, filled as a thin wash (≈ 0.55–0.6 body opacity when bristles are pre",
+      "captions": "- An elegant serif (e.g. Cormorant Garamond) for titles and subtitles, a handwriting face (e.g. Caveat) for notes, a small mono (e.g. IBM Plex Mono, wide tracking) for measured labels, Noto Serif SC for Chinese (subset to the characters used).\n- **Subtitles** sit on the paper, not in a box: centred at the bottom, serif italic ~36 px (2 balanced lines max), a second-language line beneath at ~2/3 si",
+      "transitions": "- **Brush-edge wipes**: a wavy vertical clip reveals a whole scene; lines grow by stroke progress; labels open with a left-to-right clip."
+    },
+    "createdAt": "2026-10-29T00:00:00Z",
+    "engine": "hyperframes",
+    "template": null,
+    "build": "- **Paper**: a pre-generated image (warm base, three octaves of smooth noise ±3.5 %, a few thousand short curved fibres, fine grain, light vignette), drawn first every frame.\n- **Stroke** (`engine.js` `mk`/`drawS`): a ribbon whose width follows a profile (`brush`, `leaf`, `even`, `tip`, `trunk`) with ~±22 % value-noise roughness, filled as a thin wash (≈ 0.55–0.6 body opacity when bristles are present), plus 3–9 bristle tracks at 30–85 % opacity, each with a random dash pattern and a random early end: that is the flying white. A stroke can be painted up to any fraction of its length (a moving ",
+    "palette": [
+      "#F3E2C8",
+      "#9FB4C4",
+      "#5F7486",
+      "#C8442A",
+      "#E8E0C0",
+      "#8EA860",
+      "#4E6E3C",
+      "#D9632E"
+    ],
+    "category": "Hand-drawn & Painting",
+    "categoryCn": "手绘与绘画",
+    "nameCn": "水彩笔刷",
+    "uses": [
+      "Nature documentary",
+      "Travel",
+      "Science explainers"
+    ],
+    "previewUrl": "/style-previews/watercolor.jpg",
+    "previewVideoUrl": "/style-previews/watercolor.mp4"
+  },
+  {
+    "id": "whiteboard",
+    "name": "Whiteboard Explainer",
+    "source": "builtin",
+    "sourceUrl": "https://github.com/lemomo-ai/lemo-opuscar",
+    "prompt": "An explainer drawn live on one glossy dry-erase board: single-line handwriting that is actually *written* stroke by stroke, floating markers with no hand, magnets that can move, an eraser that can rewind, and a camera that travels across the board instead of cutting.\nReferences (grammar only): RSA Animate / Cognitive Media (one continuous board, the camera travels instead of cutting, a full-board view); minutephysics (one sentence = one drawing, the simplest geometry that carries the idea); Steve Reich's *Piano Phase* (two copies of one figure at two tempi as a structure). Never copy their drawings, characters, hands or music.\n\nSuits explainers, usually science or \"how does X work\"; the length follows how many ideas the board has to hold.",
+    "notes": {
+      "camera": "- **Board**: a warm white gradient, a faint scuff and micro-scratch tile, a few dozen **ghost marks** (old words, circles, arrows) at 5–10 % in grey or pale blue, and a soft diagonal **window sheen** (white, 10–16 %) moving at ~0.35× the camera: this one detail sells \"glossy\".\n- **Ink**: alpha ~0.94, composited with **multiply** so overlaps darken like real marker. Width 6–11 px for drawing, ~13 %",
+      "pacing": "- **Hand speed**: every stroke follows a slow-fast-slow curve (`u − sin(2πu)/2π × 0.8`). Strokes are scheduled into a **time window** and the engine solves the speed, so writing always finishes on time.\n- **Pen hops** between strokes lift in proportion to distance (shadow slides and blurs); long gaps send the pen off-frame to park and back shortly before its next stroke.\n- **Magnet**: drop with a ",
+      "type": "- **Handwriting only**: a single-line hand (e.g. EMS Tech, OFL) for all board text; titles large (~120–200 px cap height), labels 30–70 px.\n- **Title and end card are written on the board** in the same hand.\n- **Burned subtitles**: an off-white rounded label (~90 %), a handwriting-like face (e.g. Architects Daughter ~44 px), dark text, a short accent-colour marker dash. Split at clauses, ≤ 44 char",
+      "color": "- **Board**: a warm white gradient, a faint scuff and micro-scratch tile, a few dozen **ghost marks** (old words, circles, arrows) at 5–10 % in grey or pale blue, and a soft diagonal **window sheen** (white, 10–16 %) moving at ~0.35× the camera: this one detail sells \"glossy\".\n- **Ink**: alpha ~0.94, composited with **multiply** so overlaps darken like real marker. Width 6–11 px for drawing, ~13 %",
+      "captions": "- **Burned subtitles**: an off-white rounded label (~90 %), a handwriting-like face (e.g. Architects Daughter ~44 px), dark text, a short accent-colour marker dash. Split at clauses, ≤ 44 characters per line, bottom ~12 % of the frame kept free for them in every shot. Hold ≥ max(1.8 s, speech + 0.6 s).",
+      "transitions": "- **Hand speed**: every stroke follows a slow-fast-slow curve (`u − sin(2πu)/2π × 0.8`). Strokes are scheduled into a **time window** and the engine solves the speed, so writing always finishes on time.\n- **Pen hops** between strokes lift in proportion to distance (shadow slides and blurs); long gap"
+    },
+    "createdAt": "2026-10-29T00:00:00Z",
+    "engine": "hyperframes",
+    "template": null,
+    "build": "- **Board**: a warm white gradient, a faint scuff and micro-scratch tile, a few dozen **ghost marks** (old words, circles, arrows) at 5–10 % in grey or pale blue, and a soft diagonal **window sheen** (white, 10–16 %) moving at ~0.35× the camera: this one detail sells \"glossy\".\n- **Ink**: alpha ~0.94, composited with **multiply** so overlaps darken like real marker. Width 6–11 px for drawing, ~13 % of cap height for lettering.\n- **Stroke character**: resampled every ~0.6 × width; low-frequency hand wobble along the normal (a few px, long wavelength) plus a finer tremor; chisel-tip width modulat",
+    "palette": [
+      "#23262C",
+      "#2A5CB3",
+      "#D97757",
+      "#2E8B57",
+      "#C8363A",
+      "#1F2A44",
+      "#1F8A8A",
+      "#7A4FB3"
+    ],
+    "category": "Hand-drawn & Painting",
+    "categoryCn": "手绘与绘画",
+    "nameCn": "白板讲解",
+    "uses": [
+      "Explainers",
+      "Online courses",
+      "Science"
+    ],
+    "previewUrl": "/style-previews/whiteboard.jpg",
+    "previewVideoUrl": "/style-previews/whiteboard.mp4"
+  }
+]

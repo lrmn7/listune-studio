@@ -1,0 +1,64 @@
+import { useTranslation } from 'react-i18next';
+import type { AgentId, PermissionRequest } from '@listune/shared';
+import { AgentLogo } from '@/components/AgentLogo';
+import { Button } from '@/components/Button';
+import { AGENT_NAMES } from '@/lib/agents';
+
+/** The option the "Allow" button maps to: only allow-once. Never allow-always. */
+export function allowOption(request: PermissionRequest) {
+  return request.options.find((o) => o.kind === 'allow-once');
+}
+
+export function PermissionCard({
+  request,
+  ask,
+  agentId = 'claude',
+  allowLabel,
+  onRespond,
+}: {
+  request: PermissionRequest;
+  ask?: string;
+  agentId?: AgentId;
+  allowLabel?: string;
+  onRespond(optionId: string | null): void;
+}) {
+  const { t } = useTranslation();
+  const agent = AGENT_NAMES[agentId];
+  const allow = allowOption(request);
+  return (
+    <div className="flex flex-col gap-3 rounded-md border border-hairline bg-ink p-3">
+      <div className="flex flex-col gap-1">
+        <span className="text-xs text-text-3">{t('permission.askedAgent', { agent })}</span>
+        <span className="font-serif text-sm leading-normal text-[#D9D9D9]" style={{ fontFamily: 'Lora, Georgia, serif' }}>
+          {ask ?? request.title}
+        </span>
+      </div>
+      <div className="flex flex-col gap-2">
+        <span className="flex items-center gap-2 text-xs text-text-3">
+          <AgentLogo id={agentId} size={14} />
+          {t('permission.wantsToRun', { agent })}
+        </span>
+        <pre className="m-0 rounded-sm border border-border bg-sidebar px-3 py-2 font-mono text-xs leading-[1.7] whitespace-pre-line text-foreground">
+          {request.commands.join('\n')}
+        </pre>
+      </div>
+      <div className="flex flex-wrap items-center gap-2">
+        {allow && (
+          <Button
+            variant="light"
+            className="h-9 px-3 text-[13px] font-semibold"
+            onClick={() => onRespond(allow.id)}
+          >
+            {allowLabel ?? t('permission.allowInstall')}
+          </Button>
+        )}
+        <Button variant="ghost" className="h-9 px-2 text-[13px]" onClick={() => onRespond(null)}>
+          {t('common.cancel')}
+        </Button>
+        <span className="ml-auto text-xs text-text-3">
+          {allow ? t('permission.runsAsYou') : t('permission.cantAllowOnce')}
+        </span>
+      </div>
+    </div>
+  );
+}

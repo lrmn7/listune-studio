@@ -1,0 +1,23 @@
+{
+  "name": "listune-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.5.3",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "pnpm --filter @listune/desktop build",
+    "build:desktop": "pnpm --filter @listune/desktop tauri build",
+    "test": "pnpm -r test",
+    "typecheck": "pnpm -r typecheck",
+    "dev:desktop": "pnpm --filter @listune/desktop tauri dev --config src-tauri/tauri.dev.conf.json",
+    "version:set": "node scripts/version.mjs",
+    "usage": "node scripts/usage-report.mjs"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "vitest": "^4"
+  }
+}
