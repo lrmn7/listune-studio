@@ -2,6 +2,8 @@ node_modules/
 .superpowers/
 target/
 dist/
+!dist/templates/
+!dist/templates/**
 .wrangler/
 .DS_Store
 *.log
