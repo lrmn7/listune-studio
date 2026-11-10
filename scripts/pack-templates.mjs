@@ -20,9 +20,14 @@ function collectFiles(dir, base = '') {
     if (stat.isDirectory()) {
       entries.push(...collectFiles(full, rel));
     } else {
+      let data = fs.readFileSync(full);
+      // Normalize text file line endings to LF (\n) for cross-platform deterministic hashing
+      if (/\.(ts|tsx|js|mjs|json|md|css|html|txt)$/i.test(item)) {
+        data = Buffer.from(data.toString('utf8').replace(/\r\n/g, '\n'), 'utf8');
+      }
       entries.push({
         name: rel.replace(/\\/g, '/'),
-        data: fs.readFileSync(full),
+        data,
       });
     }
   }

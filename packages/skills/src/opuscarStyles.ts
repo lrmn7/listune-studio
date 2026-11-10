@@ -310,8 +310,8 @@ export const OPUSCAR_CATALOG: OpuscarStyleMeta[] = [
     "previewVideoUrl": "/style-previews/crayon-book.mp4",
     "engine": "remotion",
     "template": {
-      "sha256": "6372e9aa24c55080f0af89b05e253d884f9d48f7da9de98a702a6058e0a8047d",
-      "size": 9673,
+      "sha256": "9630d21c3b3bb91e052fe6b8445ece0164b6e2ee259aeec3a3f3389683f512da",
+      "size": 9664,
       "version": 1
     },
     "build": "- **Paper**: warm off-white (around `#f4efe3`). The tooth is **anchored to the page** (it pans with the camera; on zoom two octaves cross-fade so grains stay ~1 px on screen), never screen-fixed: three octaves of value noise plus a horizontal fibre term. A final pass embosses it (lit top-left), less where wax filled the tooth. Low mottling ±2 %, warm vignette.\n- **Wax adhesion (the core rule)**: every crayon layer is a canvas where RGB = colour and **A = pressure**; the shader deposits wax where `tooth > 1 − k·pressure` (soft edge). Light pressure = speckled peaks; heavy = almost solid, slight",
@@ -351,8 +351,8 @@ export const OPUSCAR_CATALOG: OpuscarStyleMeta[] = [
     "createdAt": "2026-10-29T00:00:00Z",
     "engine": "remotion",
     "template": {
-      "sha256": "5df9bec9cc4c7feb28640b9f5d8d40a0e7f151a6c72f8f901fb2a0e4f8349cd0",
-      "size": 9455,
+      "sha256": "32b6b26499cd442ece6a45e9ac35a88a46ab921469d2a754cb2bd8c4dd06db56",
+      "size": 9446,
       "version": 1
     },
     "build": "- **Paper**: warm cream, fixed-seed fibre noise and a faint dot grid in world space. **Ink**: dark warm ink for axes and series, pale warm grey for grid and zero line, IBM Plex Mono ticks.\n- **Marks**: data dots carry a thin ink ring so pale values stay visible on cream. A mark lands with a short pop and a thin ripple; suppress ripples when marks arrive closer than ~0.1 s.\n- **Handwriting** (Caveat) in pencil, per-glyph jitter, graphite grain, written on as the tip dances over the x-height. Leaders are wobbly curves ending in an **un-closed** ring around the mark.\n- **The red–blue pencil**: he",
@@ -692,8 +692,8 @@ export const OPUSCAR_CATALOG: OpuscarStyleMeta[] = [
     "previewUrl": "/style-previews/satellite-briefing.jpg",
     "previewVideoUrl": "/style-previews/satellite-briefing.mp4",
     "template": {
-      "sha256": "05381dfac034e3c80fc463b7c07f32fd47d90c6f3b1eea475c0208effd83b187",
-      "size": 10554,
+      "sha256": "ea356a635a970aa3adb02293f337ec302cebf420d23d9a83ff9e97fdc50f9795",
+      "size": 10541,
       "version": 1
     },
     "build": "- **Plates**: georeferenced rasters with a lon/lat box, sampled in a shader where the camera ray hits the ground, nested by resolution (world → region → detail) with feathered edges so finer plates dissolve in as the camera descends.\n- **Globe**: ray–sphere from a perspective camera, a thin atmosphere rim, limb shading at orbit only; compute |C|² − R² in double precision (float32 fails below a few tens of km).\n- **Time**: dated plates share one grid. A soft scan front (a satellite pass, never a hairline) swaps them: north → south forward, south → north for a rewind. Growth can run outward from",
@@ -768,8 +768,8 @@ export const OPUSCAR_CATALOG: OpuscarStyleMeta[] = [
     "createdAt": "2026-10-29T00:00:00Z",
     "engine": "remotion",
     "template": {
-      "sha256": "d62a734d98bb22cd1a3c93aba55a281be4568650ff114aaeb36ce3f38d16ba10",
-      "size": 9562,
+      "sha256": "146f2ff0498e43089a6384aab47b69bcb4ff4dcf0fd8c23b94f70fbb12805e18",
+      "size": 9555,
       "version": 1
     },
     "build": "- **Frame grid**: 1920×1080, 12 columns, ~96 px side margins, 24 px gutters, 24 px baseline. The frame can act as a **spread**: a left page (the programme: numeral, rule text, notes) and a right page (the artifact).\n- **Artifact grid** derived from the content (Gerstner): what the columns and rows *mean* is a design decision. **Choose module sizes that give the elements mass**; too many thin columns make a layout look like a chart.\n- **Surfaces**: page, paper, ink, signal colour, grid lines in two or three light greys (on page, while building, on paper). No gradients, no shadows, no particles,",
